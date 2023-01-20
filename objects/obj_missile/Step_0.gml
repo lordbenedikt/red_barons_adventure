@@ -14,13 +14,13 @@ if(target_obj == undefined || !instance_exists(target_obj))
 	/// @DnDVersion : 1
 	/// @DnDHash : 255CCA3F
 	/// @DnDParent : 7A27A30E
-	/// @DnDArgument : "code" "/// Find closest french aircraft$(13_10)$(13_10)target_obj = undefined;$(13_10)var _smallest_distance = 10000;$(13_10)$(13_10)with(obj_enemy) {$(13_10)	_dist = point_distance(other.x,other.y,x,y);$(13_10)	if _dist < _smallest_distance {$(13_10)		_smallest_distance = _dist;$(13_10)		other.target_obj = id;$(13_10)	}$(13_10)}"
+	/// @DnDArgument : "code" "/// Find closest french aircraft$(13_10)$(13_10)target_obj = undefined;$(13_10)var _smallest_distance = 10000;$(13_10)$(13_10)with(obj_enemy_parent) {$(13_10)	_dist = point_distance(other.x,other.y,x,y);$(13_10)	if _dist < _smallest_distance {$(13_10)		_smallest_distance = _dist;$(13_10)		other.target_obj = id;$(13_10)	}$(13_10)}"
 	/// Find closest french aircraft
 	
 	target_obj = undefined;
 	var _smallest_distance = 10000;
 	
-	with(obj_enemy) {
+	with(obj_enemy_parent) {
 		_dist = point_distance(other.x,other.y,x,y);
 		if _dist < _smallest_distance {
 			_smallest_distance = _dist;

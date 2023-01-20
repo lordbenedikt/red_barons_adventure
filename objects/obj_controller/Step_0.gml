@@ -11,8 +11,8 @@ if(!(room == room_main_level3))
 	/// @DnDHash : 6009CE4E
 	/// @DnDParent : 1B10E35D
 	/// @DnDArgument : "var" "global.destroyed_airplanes"
-	/// @DnDArgument : "value" "10"
-	if(global.destroyed_airplanes == 10)
+	/// @DnDArgument : "value" "75"
+	if(global.destroyed_airplanes == 75)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1

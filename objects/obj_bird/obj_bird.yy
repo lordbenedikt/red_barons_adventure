@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_bird",
   "spriteId": {
-    "name": "Sprite20",
-    "path": "sprites/Sprite20/Sprite20.yy",
+    "name": "spr_bird",
+    "path": "sprites/spr_bird/spr_bird.yy",
   },
   "solid": false,
   "visible": true,
@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Deko",
+    "path": "folders/Objects/Deko.yy",
   },
 }

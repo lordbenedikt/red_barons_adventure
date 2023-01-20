@@ -32,9 +32,9 @@ if(in_game == 1)
 	/// @DnDParent : 2E3DAFCC
 	/// @DnDArgument : "x" "250"
 	/// @DnDArgument : "y" "10"
-	/// @DnDArgument : "caption" ""Destroyed Airplanes: ""
+	/// @DnDArgument : "caption" ""Destroyed Enemies: ""
 	/// @DnDArgument : "var" "global.destroyed_airplanes"
-	draw_text(250, 10, string("Destroyed Airplanes: ") + string(global.destroyed_airplanes));
+	draw_text(250, 10, string("Destroyed Enemies: ") + string(global.destroyed_airplanes));
 
 	/// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 	/// @DnDVersion : 1

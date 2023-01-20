@@ -7,13 +7,14 @@ if(room==room_main_level1)
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 6283EFFA
-	/// @DnDInput : 3
+	/// @DnDInput : 4
 	/// @DnDParent : 4582DD06
-	/// @DnDArgument : "function" "spawn_on_right_limit_y"
+	/// @DnDArgument : "function" "spawn_on_right_limit_y_depth"
 	/// @DnDArgument : "arg" "obj_bird"
 	/// @DnDArgument : "arg_1" "0"
 	/// @DnDArgument : "arg_2" "room_height*0.7"
-	spawn_on_right_limit_y(obj_bird, 0, room_height*0.7);
+	/// @DnDArgument : "arg_3" "layer_get_depth(layer_get_id("Instances")) + 10"
+	spawn_on_right_limit_y_depth(obj_bird, 0, room_height*0.7, layer_get_depth(layer_get_id("Instances")) + 10);
 }
 
 /// @DnDAction : YoYo Games.Common.If_Expression

@@ -94,6 +94,14 @@ if(room != room_first)
 			/// @DnDArgument : "steps" "120"
 			/// @DnDArgument : "alarm" "4"
 			alarm_set(4, 120);
+		
+			/// @DnDAction : YoYo Games.Instances.Set_Alarm
+			/// @DnDVersion : 1
+			/// @DnDHash : 202B58A1
+			/// @DnDParent : 34E7911B
+			/// @DnDArgument : "steps" "500"
+			/// @DnDArgument : "alarm" "5"
+			alarm_set(5, 500);
 		}
 	}
 }

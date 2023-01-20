@@ -9,8 +9,8 @@ if(in_game == 1)
 	/// @DnDVersion : 1
 	/// @DnDHash : 53C3924D
 	/// @DnDParent : 71EF4A74
-	/// @DnDArgument : "steps" "random_range(30,60)"
-	alarm_set(0, random_range(30,60));
+	/// @DnDArgument : "steps" "random_range(45,100)"
+	alarm_set(0, random_range(45,100));
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
