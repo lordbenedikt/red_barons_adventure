@@ -9,8 +9,8 @@ spawn_explosion(x,y);
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 75BB3DA8
-/// @DnDArgument : "expr" "random_range(0,1) < 0.005 * (global.destroyed_airplanes - global.prev_powerup_at)"
-if(random_range(0,1) < 0.005 * (global.destroyed_airplanes - global.prev_powerup_at))
+/// @DnDArgument : "expr" "random_range(0,1) < 0.01 * (global.destroyed_airplanes - global.prev_powerup_at)"
+if(random_range(0,1) < 0.01 * (global.destroyed_airplanes - global.prev_powerup_at))
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1

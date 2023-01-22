@@ -1,6 +1,6 @@
 /// @description Shoot Laser
 
-if (keyboard_check(vk_shift) && laser_powerup) {
+if (keyboard_check(ord("S")) && laser_powerup) {
 	laser_powerup -= 0.02;
 	var start_x = x + 70;
 	var start_y = y;
