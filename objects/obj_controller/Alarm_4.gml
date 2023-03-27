@@ -71,3 +71,9 @@ if(room==room_main_level1)
 /// @DnDArgument : "steps" "random_range(5,10)"
 /// @DnDArgument : "alarm" "4"
 alarm_set(4, random_range(5,10));
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 30A1CB25
+/// @DnDArgument : "code" "/// @description Spawn decorations$(13_10)"
+/// @description Spawn decorations

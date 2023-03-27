@@ -8,6 +8,15 @@ alarm[0] = random_range(30,90);
 // Create Sunset Filter Surface
 filter_surface = surface_create(room_width, room_height);
 
+// Lightning
+lightning_is_hitting = false;
+lightning_intensity = 0;
+lightning_sound = undefined;
+lightning_sprites = [bg_lightning,bg_lightning_2];
+lightning_light_sprites = [bg_lightning_light,bg_lightning_light_2];
+lightning_index = irandom(array_length(lightning_sprites)-1);
+alarm[6] = 0;
+
 // PARTICLES
 // setup particle system
 global.part_system = part_system_create_layer("part_foreground", true);

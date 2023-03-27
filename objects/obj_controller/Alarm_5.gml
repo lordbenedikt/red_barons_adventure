@@ -23,3 +23,9 @@ if(room == room_main_level1)
 /// @DnDArgument : "steps" "random_range(250,500)"
 /// @DnDArgument : "alarm" "5"
 alarm_set(5, random_range(250,500));
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 01562B49
+/// @DnDArgument : "code" "/// @description Spawn tanks$(13_10)"
+/// @description Spawn tanks

@@ -1,3 +1,49 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 49B3DB0B
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)// var _filter_large_blur = fx_create("_filter_large_blur");$(13_10)// layer_set_fx("water", _fx_underwater);$(13_10)// fx_set_single_layer(_fx_underwater, true);$(13_10)$(13_10)var _fx_underwater = fx_create("_filter_underwater");$(13_10)// blue fx_set_parameter(_fx_underwater,"g_TintCol", [0.7,0.7,1]);$(13_10)fx_set_parameter(_fx_underwater,"g_TintCol", [1,1,1]);$(13_10)fx_set_parameter(_fx_underwater,"g_GlintCol", [0,0,0]);$(13_10)fx_set_parameter(_fx_underwater,"g_Distort1Amount", 25);$(13_10)//fx_set_parameter(_fx_underwater,"g_Distort2Amount", 2);$(13_10)fx_set_parameter(_fx_underwater,"g_Distort1Speed",0.1)$(13_10)//fx_set_parameter(_fx_underwater,"g_Distort2Speed",0.04)$(13_10)fx_set_parameter(_fx_underwater,"g_ChromaSpreadAmount",0); $(13_10)fx_set_single_layer(_fx_underwater, true);$(13_10)$(13_10)//g_Distort1Speed (Real)$(13_10)//g_Distort2Speed (Real)$(13_10)//g_Distort1Scale (Real)$(13_10)//g_Distort2Scale (Real)$(13_10)//g_Distort1Amount (Real)$(13_10)//g_Distort2Amount (Real)$(13_10)$(13_10)layer_set_fx("water", _fx_underwater);$(13_10)$(13_10)ambiente_sounds = [];$(13_10)$(13_10)if (room == room_main_level3) {$(13_10)	alarm[6] = 100;$(13_10)	$(13_10)	// storm ambiente$(13_10)	var snd = audio_play_sound(snd_windy_storm,0,1,0);$(13_10)	array_push(ambiente_sounds,snd);$(13_10)	audio_sound_gain(snd,1,1000);$(13_10)	$(13_10)	// rain ambiente$(13_10)	var snd = audio_play_sound(snd_rain_loop,0,1,0);$(13_10)	array_push(ambiente_sounds,snd);$(13_10)	audio_sound_gain(snd,1,1000);$(13_10)}"
+/// @description Execute Code
+
+// var _filter_large_blur = fx_create("_filter_large_blur");
+// layer_set_fx("water", _fx_underwater);
+// fx_set_single_layer(_fx_underwater, true);
+
+var _fx_underwater = fx_create("_filter_underwater");
+// blue fx_set_parameter(_fx_underwater,"g_TintCol", [0.7,0.7,1]);
+fx_set_parameter(_fx_underwater,"g_TintCol", [1,1,1]);
+fx_set_parameter(_fx_underwater,"g_GlintCol", [0,0,0]);
+fx_set_parameter(_fx_underwater,"g_Distort1Amount", 25);
+//fx_set_parameter(_fx_underwater,"g_Distort2Amount", 2);
+fx_set_parameter(_fx_underwater,"g_Distort1Speed",0.1)
+//fx_set_parameter(_fx_underwater,"g_Distort2Speed",0.04)
+fx_set_parameter(_fx_underwater,"g_ChromaSpreadAmount",0); 
+fx_set_single_layer(_fx_underwater, true);
+
+//g_Distort1Speed (Real)
+//g_Distort2Speed (Real)
+//g_Distort1Scale (Real)
+//g_Distort2Scale (Real)
+//g_Distort1Amount (Real)
+//g_Distort2Amount (Real)
+
+layer_set_fx("water", _fx_underwater);
+
+ambiente_sounds = [];
+
+if (room == room_main_level3) {
+	alarm[6] = 100;
+	
+	// storm ambiente
+	var snd = audio_play_sound(snd_windy_storm,0,1,0);
+	array_push(ambiente_sounds,snd);
+	audio_sound_gain(snd,1,1000);
+	
+	// rain ambiente
+	var snd = audio_play_sound(snd_rain_loop,0,1,0);
+	array_push(ambiente_sounds,snd);
+	audio_sound_gain(snd,1,1000);
+}
+
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 35BB1B03
@@ -23,9 +69,9 @@ if(room==room_main_level2)
 	/// @DnDVersion : 1
 	/// @DnDHash : 3A64D14F
 	/// @DnDParent : 06AFF911
-	/// @DnDArgument : "value" "room_height"
+	/// @DnDArgument : "value" "room_height*0.75"
 	/// @DnDArgument : "var" "y_limit"
-	global.y_limit = room_height;
+	global.y_limit = room_height*0.75;
 }
 
 /// @DnDAction : YoYo Games.Common.If_Expression

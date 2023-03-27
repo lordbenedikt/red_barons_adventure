@@ -1,3 +1,15 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 6350475E
+/// @DnDArgument : "code" "/// @description$(13_10)$(13_10)if (lightning_is_hitting) {$(13_10)	lightning_intensity = min(max(0,lightning_intensity+0.1),1);$(13_10)} else {$(13_10)	lightning_intensity = max(0,lightning_intensity-0.03);$(13_10)}"
+/// @description
+
+if (lightning_is_hitting) {
+	lightning_intensity = min(max(0,lightning_intensity+0.1),1);
+} else {
+	lightning_intensity = max(0,lightning_intensity-0.03);
+}
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 1B10E35D
@@ -48,8 +60,9 @@ if(room == room_main_level3)
 	/// @DnDHash : 0907175F
 	/// @DnDParent : 0BDC93ED
 	/// @DnDArgument : "var" "global.destroyed_airplanes"
+	/// @DnDArgument : "op" "4"
 	/// @DnDArgument : "value" "10"
-	if(global.destroyed_airplanes == 10)
+	if(global.destroyed_airplanes >= 10)
 	{
 		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1

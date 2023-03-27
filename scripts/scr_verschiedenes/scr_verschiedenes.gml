@@ -1,3 +1,23 @@
+function spawn_powerup_maybe(x,y) {
+	if (random_range(0,1) < 0.01 * (global.destroyed_airplanes - global.prev_powerup_at)) {
+		global.prev_powerup_at = global.destroyed_airplanes;
+		spawn_random_powerup(x,y,
+		[
+			obj_bombs_powerup,
+			obj_fire_bullets_powerup,
+			obj_first_aid,
+			obj_laser_powerup,
+			obj_missile_powerup
+		]);
+	}
+}
+
+function spawn_random_powerup(x,y,possible_powerups) {
+	var len = array_length(possible_powerups);
+	var i = irandom(len-1);
+	instance_create_layer(x,y,"Instances",possible_powerups[i]);
+}
+
 function spawn_on_ground(obj_index, min_scale = 1, max_scale = 1) {
 	var _isFront = false;
 	if random(2)<0.4 {

@@ -1,3 +1,9 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 4FE98801
+/// @DnDArgument : "code" "/// @description Game Over"
+/// @description Game Over
+
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 38560053

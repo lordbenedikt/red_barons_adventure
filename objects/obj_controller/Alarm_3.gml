@@ -41,3 +41,9 @@ if(room==room_main_level2)
 /// @DnDArgument : "steps" "60"
 /// @DnDArgument : "alarm" "3"
 alarm_set(3, 60);
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 14AB43FA
+/// @DnDArgument : "code" "/// @description Spawn bird$(13_10)"
+/// @description Spawn bird

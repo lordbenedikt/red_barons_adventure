@@ -1,11 +1,19 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 57D52219
-/// @DnDArgument : "code" "left = false;$(13_10)right = false;$(13_10)up = false;$(13_10)down = false;"
+/// @DnDArgument : "code" "left = false;$(13_10)right = false;$(13_10)up = false;$(13_10)down = false;$(13_10)$(13_10)light_is_on = false;"
 left = false;
 right = false;
 up = false;
 down = false;
+
+light_is_on = false;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 49CF24A6
+/// @DnDArgument : "var" "laser_is_active"
+laser_is_active = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -50,6 +58,13 @@ laser_powerup = 10;
 /// @DnDHash : 1B2C365E
 /// @DnDArgument : "var" "fire_bullets_powerup"
 fire_bullets_powerup = 0;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 4276D598
+/// @DnDArgument : "expr" "3"
+/// @DnDArgument : "var" "bombs_powerup"
+bombs_powerup = 3;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
