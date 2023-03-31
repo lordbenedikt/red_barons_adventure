@@ -9,6 +9,10 @@ function spawn_powerup_maybe(x,y) {
 			obj_laser_powerup,
 			obj_missile_powerup
 		]);
+	} else {
+		if (irandom(10)==0 && room==room_main_level1 && obj_controller.boss_spawned) {
+			instance_create_layer(x,y,"Instances",obj_bombs_powerup);
+		}
 	}
 }
 
@@ -32,7 +36,7 @@ function spawn_on_ground(obj_index, min_scale = 1, max_scale = 1) {
 		obj_id.image_xscale = _scale / obj_id.distance;
 		obj_id.image_yscale = _scale / obj_id.distance;
 		obj_id.x = room_width + obj_id.sprite_width / 2;
-		obj_id.y = 675;
+		obj_id.y = 680;
 	} else {
 
 		var _distance = random_range(15,30)
@@ -46,6 +50,15 @@ function spawn_on_ground(obj_index, min_scale = 1, max_scale = 1) {
 	}
 }
 
+function spawn_boss_tank() {	
+	var _distance = 10
+	
+	obj_id = instance_create_layer(0, 0, "Instances", obj_boss_tank)
+	obj_id.distance = _distance / 10;
+	obj_id.x = room_width + obj_id.sprite_width / 2;
+	obj_id.y = 675;
+}
+
 function spawn_vehicle(obj_index, min_scale = 1, max_scale = 1) {
 	var _scale = 0.6 * random_range(min_scale, max_scale);
 
@@ -54,7 +67,7 @@ function spawn_vehicle(obj_index, min_scale = 1, max_scale = 1) {
 	obj_id.image_xscale = _scale / obj_id.distance;
 	obj_id.image_yscale = _scale / obj_id.distance;
 	obj_id.x = room_width + obj_id.sprite_width / 2;
-	obj_id.y = 655;
+	obj_id.y = 665;
 }
 
 function spawn_on_right(enemy_type) {

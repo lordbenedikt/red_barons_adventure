@@ -1,15 +1,14 @@
-/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
-/// @DnDHash : 5C829260
-/// @DnDArgument : "var" "room"
-/// @DnDArgument : "value" "room_main_level1"
-if(room == room_main_level1)
+/// @DnDHash : 15FEA073
+/// @DnDArgument : "expr" "room==room_main_level1 && !boss_spawned"
+if(room==room_main_level1 && !boss_spawned)
 {
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 12933644
 	/// @DnDInput : 3
-	/// @DnDParent : 5C829260
+	/// @DnDParent : 15FEA073
 	/// @DnDArgument : "function" "spawn_vehicle"
 	/// @DnDArgument : "arg" "obj_enemy_tank"
 	/// @DnDArgument : "arg_1" "1.5"

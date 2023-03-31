@@ -1,7 +1,7 @@
 /// @description draw self and gun
 
 var _gun_x = x-53*image_xscale;
-var _gun_y = y-135*image_yscale;
+var _gun_y = y-140*image_yscale;
 
 gun_direction = 0;
 with(obj_red_baron) {

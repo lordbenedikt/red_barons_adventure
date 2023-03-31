@@ -10,36 +10,21 @@ if (lightning_is_hitting) {
 	lightning_intensity = max(0,lightning_intensity-0.03);
 }
 
-/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
-/// @DnDHash : 1B10E35D
-/// @DnDArgument : "var" "room"
-/// @DnDArgument : "not" "1"
-/// @DnDArgument : "value" "room_main_level3"
-if(!(room == room_main_level3))
+/// @DnDHash : 0217F115
+/// @DnDArgument : "expr" "room!=room_main_level3 && room!=room_main_level1"
+if(room!=room_main_level3 && room!=room_main_level1)
 {
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 6009CE4E
-	/// @DnDParent : 1B10E35D
+	/// @DnDParent : 0217F115
 	/// @DnDArgument : "var" "global.destroyed_airplanes"
+	/// @DnDArgument : "op" "4"
 	/// @DnDArgument : "value" "75"
-	if(global.destroyed_airplanes == 75)
+	if(global.destroyed_airplanes >= 75)
 	{
-		/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 200E5787
-		/// @DnDParent : 6009CE4E
-		/// @DnDArgument : "var" "global.prev_powerup_at"
-		global.prev_powerup_at = 0;
-	
-		/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 238674B4
-		/// @DnDParent : 6009CE4E
-		/// @DnDArgument : "var" "global.destroyed_airplanes"
-		global.destroyed_airplanes = 0;
-	
 		/// @DnDAction : YoYo Games.Rooms.Next_Room
 		/// @DnDVersion : 1
 		/// @DnDHash : 0E286194
@@ -88,6 +73,47 @@ if(room == room_main_level3)
 			/// @DnDArgument : "expr" "1"
 			/// @DnDArgument : "var" "zeppelin_spawned"
 			zeppelin_spawned = 1;
+		}
+	}
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2E54DE33
+/// @DnDArgument : "var" "room"
+/// @DnDArgument : "value" "room_main_level1"
+if(room == room_main_level1)
+{
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 732E85B8
+	/// @DnDParent : 2E54DE33
+	/// @DnDArgument : "var" "global.destroyed_airplanes"
+	/// @DnDArgument : "op" "4"
+	/// @DnDArgument : "value" "75"
+	if(global.destroyed_airplanes >= 75)
+	{
+		/// @DnDAction : YoYo Games.Common.If_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 23E6CD69
+		/// @DnDParent : 732E85B8
+		/// @DnDArgument : "var" "boss_spawned"
+		if(boss_spawned == 0)
+		{
+			/// @DnDAction : YoYo Games.Common.Function_Call
+			/// @DnDVersion : 1
+			/// @DnDHash : 4891DC97
+			/// @DnDParent : 23E6CD69
+			/// @DnDArgument : "function" "spawn_boss_tank"
+			spawn_boss_tank();
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 217823CC
+			/// @DnDParent : 23E6CD69
+			/// @DnDArgument : "expr" "1"
+			/// @DnDArgument : "var" "boss_spawned"
+			boss_spawned = 1;
 		}
 	}
 }

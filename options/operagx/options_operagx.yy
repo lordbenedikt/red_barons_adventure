@@ -8,11 +8,11 @@
   "option_operagx_guid": "5620650d-401a-475e-9aea-3dcfeb967153",
   "option_operagx_internalShareUrl": "",
   "option_operagx_interpolate_pixels": false,
-  "option_operagx_next_version": "1.0.0.22",
+  "option_operagx_next_version": "1.0.0.23",
   "option_operagx_publicShareUrl": "https://gx.games/games/0s03pm/red-baron-s-adventure/",
   "option_operagx_scale": 0,
   "option_operagx_team_id": "6f41d78e-5670-47d5-b741-3e7232f00423",
   "option_operagx_team_name": "bennijen studio",
   "option_operagx_texture_page": "2048x2048",
-  "option_operagx_version": "1.0.0.21",
+  "option_operagx_version": "1.0.0.22",
 }

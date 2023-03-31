@@ -64,7 +64,7 @@ if (room == room_main_level3) {
 
 		gpu_set_blendmode(bm_subtract);
 		
-		var lightning_brightness = lightning_intensity * (((perlin_noise(current_time/100)+1.3)+0.05*(perlin_noise(current_time/20)+1))/2.1)
+		var lightning_brightness = 1.4 * lightning_intensity * (((perlin_noise(current_time/100)+1.3)+0.05*(perlin_noise(current_time/20)+1))/2.1)
 		draw_sprite_ext(lightning_light_sprites[lightning_index],0,0,0,1,1,0,c_white,lightning_brightness);
 		
 		gpu_set_blendmode(bm_normal);

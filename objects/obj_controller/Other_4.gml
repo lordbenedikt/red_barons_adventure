@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 49B3DB0B
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)// var _filter_large_blur = fx_create("_filter_large_blur");$(13_10)// layer_set_fx("water", _fx_underwater);$(13_10)// fx_set_single_layer(_fx_underwater, true);$(13_10)$(13_10)var _fx_underwater = fx_create("_filter_underwater");$(13_10)// blue fx_set_parameter(_fx_underwater,"g_TintCol", [0.7,0.7,1]);$(13_10)fx_set_parameter(_fx_underwater,"g_TintCol", [1,1,1]);$(13_10)fx_set_parameter(_fx_underwater,"g_GlintCol", [0,0,0]);$(13_10)fx_set_parameter(_fx_underwater,"g_Distort1Amount", 25);$(13_10)//fx_set_parameter(_fx_underwater,"g_Distort2Amount", 2);$(13_10)fx_set_parameter(_fx_underwater,"g_Distort1Speed",0.1)$(13_10)//fx_set_parameter(_fx_underwater,"g_Distort2Speed",0.04)$(13_10)fx_set_parameter(_fx_underwater,"g_ChromaSpreadAmount",0); $(13_10)fx_set_single_layer(_fx_underwater, true);$(13_10)$(13_10)//g_Distort1Speed (Real)$(13_10)//g_Distort2Speed (Real)$(13_10)//g_Distort1Scale (Real)$(13_10)//g_Distort2Scale (Real)$(13_10)//g_Distort1Amount (Real)$(13_10)//g_Distort2Amount (Real)$(13_10)$(13_10)layer_set_fx("water", _fx_underwater);$(13_10)$(13_10)ambiente_sounds = [];$(13_10)$(13_10)if (room == room_main_level3) {$(13_10)	alarm[6] = 100;$(13_10)	$(13_10)	// storm ambiente$(13_10)	var snd = audio_play_sound(snd_windy_storm,0,1,0);$(13_10)	array_push(ambiente_sounds,snd);$(13_10)	audio_sound_gain(snd,1,1000);$(13_10)	$(13_10)	// rain ambiente$(13_10)	var snd = audio_play_sound(snd_rain_loop,0,1,0);$(13_10)	array_push(ambiente_sounds,snd);$(13_10)	audio_sound_gain(snd,1,1000);$(13_10)}"
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)// var _filter_large_blur = fx_create("_filter_large_blur");$(13_10)// layer_set_fx("water", _fx_underwater);$(13_10)// fx_set_single_layer(_fx_underwater, true);$(13_10)$(13_10)var _fx_underwater = fx_create("_filter_underwater");$(13_10)// blue fx_set_parameter(_fx_underwater,"g_TintCol", [0.7,0.7,1]);$(13_10)fx_set_parameter(_fx_underwater,"g_TintCol", [1,1,1]);$(13_10)fx_set_parameter(_fx_underwater,"g_GlintCol", [0,0,0]);$(13_10)fx_set_parameter(_fx_underwater,"g_Distort1Amount", 25);$(13_10)//fx_set_parameter(_fx_underwater,"g_Distort2Amount", 2);$(13_10)fx_set_parameter(_fx_underwater,"g_Distort1Speed",0.1)$(13_10)//fx_set_parameter(_fx_underwater,"g_Distort2Speed",0.04)$(13_10)fx_set_parameter(_fx_underwater,"g_ChromaSpreadAmount",0); $(13_10)fx_set_single_layer(_fx_underwater, true);$(13_10)$(13_10)//g_Distort1Speed (Real)$(13_10)//g_Distort2Speed (Real)$(13_10)//g_Distort1Scale (Real)$(13_10)//g_Distort2Scale (Real)$(13_10)//g_Distort1Amount (Real)$(13_10)//g_Distort2Amount (Real)$(13_10)$(13_10)layer_set_fx("water", _fx_underwater);$(13_10)$(13_10)boss_spawned = 0;$(13_10)ambiente_sounds = [];$(13_10)$(13_10)global.destroyed_airplanes = 0$(13_10)global.prev_powerup_at = 0$(13_10)$(13_10)if (room == room_main_level3) {$(13_10)	alarm[6] = 100;$(13_10)	$(13_10)	// storm ambiente$(13_10)	var snd = audio_play_sound(snd_windy_storm,0,1,0);$(13_10)	array_push(ambiente_sounds,snd);$(13_10)	audio_sound_gain(snd,1,1000);$(13_10)	$(13_10)	// rain ambiente$(13_10)	var snd = audio_play_sound(snd_rain_loop,0,1,0);$(13_10)	array_push(ambiente_sounds,snd);$(13_10)	audio_sound_gain(snd,1,1000);$(13_10)}"
 /// @description Execute Code
 
 // var _filter_large_blur = fx_create("_filter_large_blur");
@@ -28,7 +28,11 @@ fx_set_single_layer(_fx_underwater, true);
 
 layer_set_fx("water", _fx_underwater);
 
+boss_spawned = 0;
 ambiente_sounds = [];
+
+global.destroyed_airplanes = 0
+global.prev_powerup_at = 0
 
 if (room == room_main_level3) {
 	alarm[6] = 100;
