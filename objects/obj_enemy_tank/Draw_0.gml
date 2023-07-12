@@ -12,6 +12,7 @@ if (alarm[0]<2) {
 	var _x = _gun_x + lengthdir_x(20,gun_direction) * image_xscale;
 	var _y = _gun_y + lengthdir_y(20,gun_direction) * image_yscale;
 	var _bullet = instance_create_layer(_x,_y,layer,obj_enemy_bullet);
+	audio_play_sound(snd_gunshot_2,0,0)
 	_bullet.speed = 5;
 	_bullet.direction= gun_direction;
 	_bullet.x_speed = -object_speed;

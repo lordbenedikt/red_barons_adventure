@@ -23,7 +23,6 @@ if(in_game == 1)
 	/// @DnDHash : 4658D369
 	/// @DnDParent : 2E3DAFCC
 	/// @DnDArgument : "font" "font_destroyed_airplanes"
-	/// @DnDSaveInfo : "font" "font_destroyed_airplanes"
 	draw_set_font(font_destroyed_airplanes);
 
 	/// @DnDAction : YoYo Games.Drawing.Draw_Value

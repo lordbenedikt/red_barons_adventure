@@ -1,2 +1,7 @@
 Die Gegner stürzen ab, wenn sie 0 HP haben. Auf der Absturzbahn 
 können sie mit dem Spieler kollidieren.
+
+Story Elemente:
+Dialoge
+Cutscenes
+Musik
