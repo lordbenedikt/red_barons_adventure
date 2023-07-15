@@ -1,5 +1,7 @@
 /// @description Setup
+global.difficulty = 0.5;
 global.prev_powerup_at = 0;
+help = 0;
 game_over = 0;
 __dnd_health = 100;
 in_game = 0;

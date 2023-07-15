@@ -12,8 +12,8 @@ with(obj_controller) {
 	/// @DnDVersion : 1
 	/// @DnDHash : 0D3BE948
 	/// @DnDParent : 3224A73F
-	/// @DnDArgument : "health" "-20"
+	/// @DnDArgument : "health" "-20*global.difficulty"
 	/// @DnDArgument : "health_relative" "1"
 	if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
-	__dnd_health += real(-20);
+	__dnd_health += real(-20*global.difficulty);
 }

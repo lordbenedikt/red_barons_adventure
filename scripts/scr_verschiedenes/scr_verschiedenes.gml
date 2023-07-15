@@ -1,3 +1,7 @@
+function draw_fit_room_size(sprite) {
+	draw_sprite_ext(sprite,0,0,0,room_width/sprite_get_width(sprite), room_height/sprite_get_height(sprite),0,c_white,1);
+}
+
 function spawn_powerup_maybe(x,y) {
 	if (random_range(0,1) < 0.01 * (global.destroyed_airplanes - global.prev_powerup_at)) {
 		global.prev_powerup_at = global.destroyed_airplanes;

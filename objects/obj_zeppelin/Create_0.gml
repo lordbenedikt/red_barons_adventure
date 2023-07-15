@@ -8,9 +8,9 @@ alarm_set(1, 300);
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 3224F0B9
-/// @DnDArgument : "expr" "100"
+/// @DnDArgument : "expr" "100*global.difficulty"
 /// @DnDArgument : "var" "armour"
-armour = 100;
+armour = 100*global.difficulty;
 
 /// @DnDAction : YoYo Games.Instance Variables.Set_Health
 /// @DnDVersion : 1

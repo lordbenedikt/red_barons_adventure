@@ -1,5 +1,37 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
+/// @DnDHash : 45857A29
+/// @DnDArgument : "var" "help"
+/// @DnDArgument : "value" "1"
+if(help == 1)
+{
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 0C8FBFE8
+	/// @DnDParent : 45857A29
+	/// @DnDArgument : "function" "draw_fit_room_size"
+	/// @DnDArgument : "arg" "spr_important_menu"
+	draw_fit_room_size(spr_important_menu);
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 71C7C65C
+/// @DnDArgument : "var" "help"
+/// @DnDArgument : "value" "2"
+if(help == 2)
+{
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 7F79EBAC
+	/// @DnDParent : 71C7C65C
+	/// @DnDArgument : "function" "draw_fit_room_size"
+	/// @DnDArgument : "arg" "spr_powerups_menu"
+	draw_fit_room_size(spr_powerups_menu);
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
 /// @DnDHash : 2E3DAFCC
 /// @DnDArgument : "var" "in_game"
 /// @DnDArgument : "value" "1"
@@ -23,6 +55,7 @@ if(in_game == 1)
 	/// @DnDHash : 4658D369
 	/// @DnDParent : 2E3DAFCC
 	/// @DnDArgument : "font" "font_destroyed_airplanes"
+	/// @DnDSaveInfo : "font" "font_destroyed_airplanes"
 	draw_set_font(font_destroyed_airplanes);
 
 	/// @DnDAction : YoYo Games.Drawing.Draw_Value

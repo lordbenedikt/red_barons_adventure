@@ -63,9 +63,9 @@ if(x < -sprite_width / 2)
 		/// @DnDVersion : 1
 		/// @DnDHash : 3B4D9EE1
 		/// @DnDParent : 1549E749
-		/// @DnDArgument : "health" "-20"
+		/// @DnDArgument : "health" "-20*global.difficulty"
 		/// @DnDArgument : "health_relative" "1"
 		if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
-		__dnd_health += real(-20);
+		__dnd_health += real(-20*global.difficulty);
 	}
 }
