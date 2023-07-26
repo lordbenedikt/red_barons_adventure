@@ -1,10 +1,38 @@
-/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
-/// @DnDHash : 00446EEC
-/// @DnDApplyTo : all
-with(all) instance_destroy();
+/// @DnDHash : 7D268AA1
+/// @DnDArgument : "xpos_relative" "1"
+/// @DnDArgument : "ypos_relative" "1"
+/// @DnDArgument : "objectid" "obj_explosion"
+/// @DnDSaveInfo : "objectid" "obj_explosion"
+instance_create_layer(x + 0, y + 0, "Instances", obj_explosion);
 
-/// @DnDAction : YoYo Games.Rooms.Next_Room
+/// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
-/// @DnDHash : 44CA0913
-room_goto_next();
+/// @DnDHash : 26B684AB
+/// @DnDArgument : "xpos" "-180"
+/// @DnDArgument : "xpos_relative" "1"
+/// @DnDArgument : "ypos_relative" "1"
+/// @DnDArgument : "objectid" "obj_explosion"
+/// @DnDSaveInfo : "objectid" "obj_explosion"
+instance_create_layer(x + -180, y + 0, "Instances", obj_explosion);
+
+/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 553DA58B
+/// @DnDArgument : "xpos" "180"
+/// @DnDArgument : "xpos_relative" "1"
+/// @DnDArgument : "ypos_relative" "1"
+/// @DnDArgument : "objectid" "obj_explosion"
+/// @DnDSaveInfo : "objectid" "obj_explosion"
+instance_create_layer(x + 180, y + 0, "Instances", obj_explosion);
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 10BAF91B
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)spawn_explosion(x,y);$(13_10)level_done();$(13_10)global.cheat_codes[? "invincible"] = true;"
+/// @description Execute Code
+
+spawn_explosion(x,y);
+level_done();
+global.cheat_codes[? "invincible"] = true;

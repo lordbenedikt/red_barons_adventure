@@ -1,3 +1,12 @@
+function difficulty_multiplier() {
+	var difficulty_multipliers = [0.4, 0.65, 1, 1.2, 1.4];
+	return difficulty_multipliers[global.difficulty_level];
+}
+
+function damage_multiplier() {
+	return cheat_is_active("superstrong") ? 10 : 1;
+}
+
 function draw_fit_room_size(sprite) {
 	draw_sprite_ext(sprite,0,0,0,room_width/sprite_get_width(sprite), room_height/sprite_get_height(sprite),0,c_white,1);
 }
@@ -14,7 +23,7 @@ function spawn_powerup_maybe(x,y) {
 			obj_missile_powerup
 		]);
 	} else {
-		if (irandom(10)==0 && room==room_main_level1 && obj_controller.boss_spawned) {
+		if (irandom(10)==0 && room==room_grasslands && obj_controller.boss_spawned) {
 			instance_create_layer(x,y,"Instances",obj_bombs_powerup);
 		}
 	}
@@ -61,6 +70,15 @@ function spawn_boss_tank() {
 	obj_id.distance = _distance / 10;
 	obj_id.x = room_width + obj_id.sprite_width / 2;
 	obj_id.y = 675;
+}
+
+function spawn_boss_ship() {	
+	var _distance = 10
+	
+	obj_id = instance_create_layer(0, 0, "Instances", obj_boss_ship)
+	obj_id.distance = _distance / 10;
+	obj_id.x = room_width + obj_id.sprite_width / 2;
+	obj_id.y = global.y_limit + 20;
 }
 
 function spawn_vehicle(obj_index, min_scale = 1, max_scale = 1) {
@@ -115,4 +133,33 @@ function set_sprite_randomly(obj_id, sprite_array) {
 	obj_id.sprite_index = sprite_array[i];
 }
 
-return;
+function damage_player(_amount, _cooldown) {
+	with (obj_red_baron) {
+		if damage_cooldown > 0 { return; }
+		damage_cooldown = _cooldown;
+		with(obj_controller) {
+			if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
+			__dnd_health += real(-_amount * difficulty_multiplier() / other.armour);
+		}
+	}
+}
+
+function start_game() {
+	audio_play_sound(snd_main_menu_click, 0, 0, 1.0, undefined, 1.0);
+
+	sprite_index = spr_start_button;
+	image_index = 0;
+
+	with(obj_controller) {
+		in_game = 1;
+	
+		alarm_set(0, 90);
+	
+		global.destroyed_airplanes = 0;
+	}
+}
+
+function level_done() {
+	fade_out(global.fade_out_duration);
+	obj_controller.alarm[1] = global.fade_out_duration * 4;
+}

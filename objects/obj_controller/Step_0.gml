@@ -1,8 +1,10 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 6350475E
-/// @DnDArgument : "code" "/// @description$(13_10)$(13_10)if (lightning_is_hitting) {$(13_10)	lightning_intensity = min(max(0,lightning_intensity+0.1),1);$(13_10)} else {$(13_10)	lightning_intensity = max(0,lightning_intensity-0.03);$(13_10)}"
+/// @DnDArgument : "code" "/// @description$(13_10)$(13_10)show_debug_message("alarm[1]={0}",alarm[1]);$(13_10)$(13_10)if (lightning_is_hitting) {$(13_10)	lightning_intensity = min(max(0,lightning_intensity+0.1),1);$(13_10)} else {$(13_10)	lightning_intensity = max(0,lightning_intensity-0.03);$(13_10)}$(13_10)$(13_10)cheat()$(13_10)"
 /// @description
+
+show_debug_message("alarm[1]={0}",alarm[1]);
 
 if (lightning_is_hitting) {
 	lightning_intensity = min(max(0,lightning_intensity+0.1),1);
@@ -10,35 +12,14 @@ if (lightning_is_hitting) {
 	lightning_intensity = max(0,lightning_intensity-0.03);
 }
 
-/// @DnDAction : YoYo Games.Common.If_Expression
-/// @DnDVersion : 1
-/// @DnDHash : 0217F115
-/// @DnDArgument : "expr" "room!=room_main_level3 && room!=room_main_level1"
-if(room!=room_main_level3 && room!=room_main_level1)
-{
-	/// @DnDAction : YoYo Games.Common.If_Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 6009CE4E
-	/// @DnDParent : 0217F115
-	/// @DnDArgument : "var" "global.destroyed_airplanes"
-	/// @DnDArgument : "op" "4"
-	/// @DnDArgument : "value" "75"
-	if(global.destroyed_airplanes >= 75)
-	{
-		/// @DnDAction : YoYo Games.Rooms.Next_Room
-		/// @DnDVersion : 1
-		/// @DnDHash : 0E286194
-		/// @DnDParent : 6009CE4E
-		room_goto_next();
-	}
-}
+cheat()
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0BDC93ED
 /// @DnDArgument : "var" "room"
-/// @DnDArgument : "value" "room_main_level3"
-if(room == room_main_level3)
+/// @DnDArgument : "value" "room_mountains"
+if(room == room_mountains)
 {
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -46,8 +27,8 @@ if(room == room_main_level3)
 	/// @DnDParent : 0BDC93ED
 	/// @DnDArgument : "var" "global.destroyed_airplanes"
 	/// @DnDArgument : "op" "4"
-	/// @DnDArgument : "value" "10"
-	if(global.destroyed_airplanes >= 10)
+	/// @DnDArgument : "value" "target_destroyed_enemies[2]"
+	if(global.destroyed_airplanes >= target_destroyed_enemies[2])
 	{
 		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
@@ -81,8 +62,8 @@ if(room == room_main_level3)
 /// @DnDVersion : 1
 /// @DnDHash : 2E54DE33
 /// @DnDArgument : "var" "room"
-/// @DnDArgument : "value" "room_main_level1"
-if(room == room_main_level1)
+/// @DnDArgument : "value" "room_grasslands"
+if(room == room_grasslands)
 {
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -90,8 +71,8 @@ if(room == room_main_level1)
 	/// @DnDParent : 2E54DE33
 	/// @DnDArgument : "var" "global.destroyed_airplanes"
 	/// @DnDArgument : "op" "4"
-	/// @DnDArgument : "value" "75"
-	if(global.destroyed_airplanes >= 75)
+	/// @DnDArgument : "value" "target_destroyed_enemies[1]"
+	if(global.destroyed_airplanes >= target_destroyed_enemies[1])
 	{
 		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
@@ -111,6 +92,47 @@ if(room == room_main_level1)
 			/// @DnDVersion : 1
 			/// @DnDHash : 217823CC
 			/// @DnDParent : 23E6CD69
+			/// @DnDArgument : "expr" "1"
+			/// @DnDArgument : "var" "boss_spawned"
+			boss_spawned = 1;
+		}
+	}
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2B93EDD2
+/// @DnDArgument : "var" "room"
+/// @DnDArgument : "value" "room_sunset"
+if(room == room_sunset)
+{
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4B2E145C
+	/// @DnDParent : 2B93EDD2
+	/// @DnDArgument : "var" "global.destroyed_airplanes"
+	/// @DnDArgument : "op" "4"
+	/// @DnDArgument : "value" "target_destroyed_enemies[0]"
+	if(global.destroyed_airplanes >= target_destroyed_enemies[0])
+	{
+		/// @DnDAction : YoYo Games.Common.If_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 1EDAD4DF
+		/// @DnDParent : 4B2E145C
+		/// @DnDArgument : "var" "boss_spawned"
+		if(boss_spawned == 0)
+		{
+			/// @DnDAction : YoYo Games.Common.Function_Call
+			/// @DnDVersion : 1
+			/// @DnDHash : 4C133234
+			/// @DnDParent : 1EDAD4DF
+			/// @DnDArgument : "function" "spawn_boss_ship"
+			spawn_boss_ship();
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 20BAD519
+			/// @DnDParent : 1EDAD4DF
 			/// @DnDArgument : "expr" "1"
 			/// @DnDArgument : "var" "boss_spawned"
 			boss_spawned = 1;

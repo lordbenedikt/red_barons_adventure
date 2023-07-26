@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_powerups_menu",
-  "bbox_bottom": 1132,
+  "bbox_bottom": 767,
   "bbox_left": 0,
-  "bbox_right": 1699,
+  "bbox_right": 1365,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed2e0928-47cb-464e-9f1e-26467f8fedbc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0ebadca5-c621-4745-9012-1cd5871219e5",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1133,
+  "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8e844215-6789-4316-be4b-7d42d12ee231","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ee527585-a12b-4408-84c8-af86e0869ef8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ed2e0928-47cb-464e-9f1e-26467f8fedbc","path":"sprites/spr_powerups_menu/spr_powerups_menu.yy",},},},"Disabled":false,"id":"735d73fe-9a50-428b-84ee-9673c1797f31","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0ebadca5-c621-4745-9012-1cd5871219e5","path":"sprites/spr_powerups_menu/spr_powerups_menu.yy",},},},"Disabled":false,"id":"6c00bb28-0267-4568-bc67-c9704bf472dc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1700,
+  "width": 1366,
 }

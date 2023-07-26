@@ -21,7 +21,7 @@ if (keyboard_check(ord("S"))) {
 
 		if (instance_exists(collision_id)) {
 			with(collision_id) {
-				__dnd_health -= 4 / armour;
+				__dnd_health -= 4 * damage_multiplier() / armour;
 			}
 		}
 		part_particles_create(global.part_system_background, laser_start_x, laser_start_y, global.LaserBeamBase, 1);

@@ -1,11 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 56C4A861
-/// @DnDArgument : "code" "/// @description Spawn enemy plane$(13_10)$(13_10)if (room == room_main_level2) {$(13_10)	frequency = 2;$(13_10)} else {$(13_10)	frequency = 1;$(13_10)}"
+/// @DnDArgument : "code" "/// @description Spawn enemy plane$(13_10)$(13_10)if (room == room_sunset) {$(13_10)	frequency = boss_spawned ? 0 : 2;$(13_10)} else {$(13_10)	frequency = 1;$(13_10)}"
 /// @description Spawn enemy plane
 
-if (room == room_main_level2) {
-	frequency = 2;
+if (room == room_sunset) {
+	frequency = boss_spawned ? 0 : 2;
 } else {
 	frequency = 1;
 }
@@ -22,8 +22,8 @@ if(in_game == 1)
 	/// @DnDHash : 24FBA7D0
 	/// @DnDParent : 71EF4A74
 	/// @DnDArgument : "var" "room"
-	/// @DnDArgument : "value" "room_main_level1"
-	if(room == room_main_level1)
+	/// @DnDArgument : "value" "room_grasslands"
+	if(room == room_grasslands)
 	{
 		/// @DnDAction : YoYo Games.Instances.Set_Alarm
 		/// @DnDVersion : 1
@@ -92,7 +92,7 @@ if(in_game == 1)
 		/// @DnDArgument : "function" "spawn_on_right_limit_y"
 		/// @DnDArgument : "arg" "obj_enemy"
 		/// @DnDArgument : "arg_1" "0"
-		/// @DnDArgument : "arg_2" "global.y_limit"
-		spawn_on_right_limit_y(obj_enemy, 0, global.y_limit);
+		/// @DnDArgument : "arg_2" "room==room_sunset&&boss_spawned ? room_height/3 : global.y_limit"
+		spawn_on_right_limit_y(obj_enemy, 0, room==room_sunset&&boss_spawned ? room_height/3 : global.y_limit);
 	}
 }

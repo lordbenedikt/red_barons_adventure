@@ -4,12 +4,13 @@
 /// @DnDArgument : "expr" "game_over"
 if(game_over)
 {
-	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
-	/// @DnDHash : 1E672584
+	/// @DnDHash : 5777EC2A
 	/// @DnDParent : 33064A55
-	/// @DnDArgument : "room" "room_main_menu"
-	/// @DnDSaveInfo : "room" "room_main_menu"
+	/// @DnDArgument : "code" "/// @description fade out and next level$(13_10)$(13_10)room_goto(room_main_menu);"
+	/// @description fade out and next level
+	
 	room_goto(room_main_menu);
 
 	/// @DnDAction : YoYo Games.Common.Variable
@@ -47,9 +48,9 @@ if(room == room_main_menu)
 		/// @DnDVersion : 1
 		/// @DnDHash : 18FF614A
 		/// @DnDParent : 1CA47347
-		/// @DnDArgument : "expr" "(help+1) % 3"
+		/// @DnDArgument : "expr" "(help+1) % 5"
 		/// @DnDArgument : "var" "help"
-		help = (help+1) % 3;
+		help = (help+1) % 5;
 	}
 
 	/// @DnDAction : YoYo Games.Common.Else
@@ -75,39 +76,20 @@ if(room == room_main_menu)
 		sprite_index = spr_start_button;
 		image_index = 0;
 	
-		/// @DnDAction : YoYo Games.Rooms.Next_Room
+		/// @DnDAction : YoYo Games.Instances.Set_Alarm
 		/// @DnDVersion : 1
-		/// @DnDHash : 70E53729
+		/// @DnDHash : 4B16B04B
 		/// @DnDParent : 332269B5
-		room_goto_next();
+		/// @DnDArgument : "steps" "global.fade_out_duration"
+		/// @DnDArgument : "alarm" "1"
+		alarm_set(1, global.fade_out_duration);
 	
-		/// @DnDAction : YoYo Games.Common.Apply_To
-		/// @DnDVersion : 1
-		/// @DnDHash : 1F218BA1
-		/// @DnDApplyTo : {obj_controller}
+		/// @DnDAction : YoYo Games.Common.Execute_Script
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 2F5AE93B
 		/// @DnDParent : 332269B5
-		with(obj_controller) {
-			/// @DnDAction : YoYo Games.Common.Variable
-			/// @DnDVersion : 1
-			/// @DnDHash : 76493EAC
-			/// @DnDParent : 1F218BA1
-			/// @DnDArgument : "expr" "1"
-			/// @DnDArgument : "var" "in_game"
-			in_game = 1;
-		
-			/// @DnDAction : YoYo Games.Instances.Set_Alarm
-			/// @DnDVersion : 1
-			/// @DnDHash : 3974122D
-			/// @DnDParent : 1F218BA1
-			/// @DnDArgument : "steps" "90"
-			alarm_set(0, 90);
-		
-			/// @DnDAction : YoYo Games.Common.Set_Global
-			/// @DnDVersion : 1
-			/// @DnDHash : 5ECA9FAF
-			/// @DnDParent : 1F218BA1
-			/// @DnDArgument : "var" "destroyed_airplanes"
-			global.destroyed_airplanes = 0;
-		}
+		/// @DnDArgument : "script" "fade_out"
+		/// @DnDArgument : "arg" "global.fade_out_duration"
+		script_execute(fade_out, global.fade_out_duration);
 	}
 }

@@ -2,6 +2,7 @@
 /// @DnDVersion : 1
 /// @DnDHash : 3F81AA35
 /// @DnDArgument : "soundid" "snd_laser"
+/// @DnDSaveInfo : "soundid" "snd_laser"
 audio_stop_sound(snd_laser);
 
 /// @DnDAction : YoYo Games.Common.Function_Call

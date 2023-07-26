@@ -34,7 +34,7 @@
 		draw_set_alpha(0.8);
 		with(obj_reflect_parent) {
 			//if (layer == layer_get_id("Instances")) {
-				draw_sprite_ext(sprite_index,image_index,x-other.x,(global.y_limit-other.y) + (y-global.y_limit)*ysquash - 40,image_xscale,image_yscale,image_angle,c_black,1);
+				draw_sprite_ext(sprite_index,image_index,x-other.x,(global.y_limit-other.y) + (y-global.y_limit)*ysquash - 40,image_xscale,image_yscale,image_angle,#222222,1);
 			//}
 		}
 	surface_reset_target();

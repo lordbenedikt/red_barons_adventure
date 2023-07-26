@@ -3,17 +3,11 @@
 /// @DnDHash : 30EDB1E3
 instance_destroy();
 
-/// @DnDAction : YoYo Games.Common.Apply_To
-/// @DnDVersion : 1
-/// @DnDHash : 34ED9EA6
-/// @DnDApplyTo : {obj_controller}
-with(obj_controller) {
-	/// @DnDAction : YoYo Games.Instance Variables.Set_Health
-	/// @DnDVersion : 1
-	/// @DnDHash : 1114C79B
-	/// @DnDParent : 34ED9EA6
-	/// @DnDArgument : "health" "-10*global.difficulty"
-	/// @DnDArgument : "health_relative" "1"
-	if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
-	__dnd_health += real(-10*global.difficulty);
-}
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 3801CDBE
+/// @DnDInput : 2
+/// @DnDArgument : "script" "damage_player"
+/// @DnDArgument : "arg" "10"
+/// @DnDArgument : "arg_1" "0"
+script_execute(damage_player, 10, 0);

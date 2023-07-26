@@ -1,17 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Apply_To
-/// @DnDVersion : 1
-/// @DnDHash : 78BE66DB
-/// @DnDApplyTo : {obj_controller}
-with(obj_controller) {
-	/// @DnDAction : YoYo Games.Instances.Set_Alarm
-	/// @DnDVersion : 1
-	/// @DnDHash : 3F496B4A
-	/// @DnDParent : 78BE66DB
-	/// @DnDArgument : "steps" "180"
-	/// @DnDArgument : "alarm" "1"
-	alarm_set(1, 180);
-}
-
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 4CF4DA94
@@ -44,10 +30,11 @@ instance_create_layer(x + 180, y + 0, "Instances", obj_explosion);
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 46CA57B5
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)spawn_explosion(x,y);"
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)spawn_explosion(x,y);$(13_10)level_done();"
 /// @description Execute Code
 
 spawn_explosion(x,y);
+level_done();
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1

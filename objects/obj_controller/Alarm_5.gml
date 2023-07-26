@@ -1,8 +1,8 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 15FEA073
-/// @DnDArgument : "expr" "room==room_main_level1 && !boss_spawned"
-if(room==room_main_level1 && !boss_spawned)
+/// @DnDArgument : "expr" "room==room_grasslands && !boss_spawned"
+if(room==room_grasslands && !boss_spawned)
 {
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1

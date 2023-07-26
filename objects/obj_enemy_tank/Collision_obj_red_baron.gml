@@ -4,17 +4,11 @@
 
 __dnd_health = real(0);
 
-/// @DnDAction : YoYo Games.Common.Apply_To
-/// @DnDVersion : 1
-/// @DnDHash : 57769263
-/// @DnDApplyTo : {obj_controller}
-with(obj_controller) {
-	/// @DnDAction : YoYo Games.Instance Variables.Set_Health
-	/// @DnDVersion : 1
-	/// @DnDHash : 24BE9880
-	/// @DnDParent : 57769263
-	/// @DnDArgument : "health" "-20"
-	/// @DnDArgument : "health_relative" "1"
-	if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
-	__dnd_health += real(-20);
-}
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 4A028A62
+/// @DnDInput : 2
+/// @DnDArgument : "script" "damage_player"
+/// @DnDArgument : "arg" "20"
+/// @DnDArgument : "arg_1" "0"
+script_execute(damage_player, 20, 0);

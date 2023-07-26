@@ -2,8 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 5D2D0009
 /// @DnDArgument : "var" "room"
-/// @DnDArgument : "value" "room_main_level1"
-if(room == room_main_level1)
+/// @DnDArgument : "value" "room_grasslands"
+if(room == room_grasslands)
 {
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -42,8 +42,8 @@ else
 	/// @DnDHash : 111D4F31
 	/// @DnDParent : 025467F3
 	/// @DnDArgument : "var" "room"
-	/// @DnDArgument : "value" "room_main_level2"
-	if(room == room_main_level2)
+	/// @DnDArgument : "value" "room_sunset"
+	if(room == room_sunset)
 	{
 		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1

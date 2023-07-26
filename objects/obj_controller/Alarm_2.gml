@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
-/// @DnDHash : 4FE98801
-/// @DnDArgument : "code" "/// @description Game Over"
+/// @DnDHash : 7C0C7108
+/// @DnDArgument : "code" "/// @description Game Over$(13_10)"
 /// @description Game Over
 
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room

@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_gunshot.ogg",
   "type": 0,
-  "volume": 0.23,
+  "volume": 0.15,
 }

@@ -1,11 +1,16 @@
 /// @description Setup
-global.difficulty = 0.5;
+show_debug_message("mod={0}", -10 % 3);
+global.difficulty_level = 2;
 global.prev_powerup_at = 0;
+global.cooldown_time = 120;
+
+music_on = true;
 help = 0;
 game_over = 0;
 __dnd_health = 100;
 in_game = 0;
-alarm[0] = random_range(30,90);
+
+target_destroyed_enemies = [75, 75, 75];
 
 // Create Sunset Filter Surface
 filter_surface = surface_create(room_width, room_height);

@@ -30,10 +30,10 @@ with(other) {
 		/// @DnDVersion : 1
 		/// @DnDHash : 6EAD559C
 		/// @DnDParent : 6C9A72AF
-		/// @DnDArgument : "health" "-50 / armour"
+		/// @DnDArgument : "health" "-other.damage*damage_multiplier()*1.5/ armour"
 		/// @DnDArgument : "health_relative" "1"
 		if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
-		__dnd_health += real(-50 / armour);
+		__dnd_health += real(-other.damage*damage_multiplier()*1.5/ armour);
 	}
 
 	/// @DnDAction : YoYo Games.Common.Else
@@ -46,9 +46,9 @@ with(other) {
 		/// @DnDVersion : 1
 		/// @DnDHash : 516E781F
 		/// @DnDParent : 2C5422B0
-		/// @DnDArgument : "health" "-33.4 / armour"
+		/// @DnDArgument : "health" "-other.damage*damage_multiplier() / armour"
 		/// @DnDArgument : "health_relative" "1"
 		if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
-		__dnd_health += real(-33.4 / armour);
+		__dnd_health += real(-other.damage*damage_multiplier() / armour);
 	}
 }

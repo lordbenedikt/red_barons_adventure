@@ -1,9 +1,14 @@
+/// @DnDAction : YoYo Games.Instances.Inherit_Event
+/// @DnDVersion : 1
+/// @DnDHash : 295AA2BE
+event_inherited();
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 17FFCCA5
-/// @DnDArgument : "expr" "1*global.difficulty"
+/// @DnDArgument : "expr" "1*difficulty_multiplier()"
 /// @DnDArgument : "var" "armour"
-armour = 1*global.difficulty;
+armour = 1*difficulty_multiplier();
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -23,8 +28,8 @@ __dnd_health = real(100);
 /// @DnDVersion : 1
 /// @DnDHash : 125D9D05
 /// @DnDArgument : "var" "room"
-/// @DnDArgument : "value" "room_main_level1"
-if(room == room_main_level1)
+/// @DnDArgument : "value" "room_grasslands"
+if(room == room_grasslands)
 {
 	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
 	/// @DnDVersion : 1
@@ -40,8 +45,8 @@ if(room == room_main_level1)
 /// @DnDVersion : 1
 /// @DnDHash : 087AE269
 /// @DnDArgument : "var" "room"
-/// @DnDArgument : "value" "room_main_level2"
-if(room == room_main_level2)
+/// @DnDArgument : "value" "room_sunset"
+if(room == room_sunset)
 {
 	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
 	/// @DnDVersion : 1
@@ -66,8 +71,8 @@ if(room == room_main_level2)
 /// @DnDVersion : 1
 /// @DnDHash : 393AE1DC
 /// @DnDArgument : "var" "room"
-/// @DnDArgument : "value" "room_main_level3"
-if(room == room_main_level3)
+/// @DnDArgument : "value" "room_mountains"
+if(room == room_mountains)
 {
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1

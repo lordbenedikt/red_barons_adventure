@@ -1,3 +1,8 @@
+/// @DnDAction : YoYo Games.Instances.Inherit_Event
+/// @DnDVersion : 1
+/// @DnDHash : 313B36DC
+event_inherited();
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 081DEE7B
@@ -34,9 +39,9 @@ is_entering = 1;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 17FFCCA5
-/// @DnDArgument : "expr" "40*global.difficulty"
+/// @DnDArgument : "expr" "40*difficulty_multiplier()"
 /// @DnDArgument : "var" "armour"
-armour = 40*global.difficulty;
+armour = 40*difficulty_multiplier();
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

@@ -1,15 +1,15 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 4582DD06
-/// @DnDArgument : "expr" "room==room_main_level1"
-if(room==room_main_level1)
+/// @DnDArgument : "expr" "room==room_grasslands"
+if(room==room_grasslands)
 {
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 3DB691EE
 	/// @DnDParent : 4582DD06
-	/// @DnDArgument : "expr" "irandom(6) == 0"
-	if(irandom(6) == 0)
+	/// @DnDArgument : "expr" "irandom(50) == 0"
+	if(irandom(50) == 0)
 	{
 		/// @DnDAction : YoYo Games.Common.Function_Call
 		/// @DnDVersion : 1
@@ -28,8 +28,8 @@ if(room==room_main_level1)
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 22344511
-/// @DnDArgument : "expr" "room==room_main_level2"
-if(room==room_main_level2)
+/// @DnDArgument : "expr" "room==room_sunset"
+if(room==room_sunset)
 {
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1

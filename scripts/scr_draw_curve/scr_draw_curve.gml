@@ -1,5 +1,6 @@
 // Skriptelemente wurden für v2.3.0 geändert, weitere Informationen sind unter
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
+
 function draw_curve(x1, y1, x2, y2, start_angle, detail){
 	var dist, dist_ang, inc, draw_x, draw_y;
  

@@ -53,19 +53,13 @@ if(x < -sprite_width / 2)
 	/// @DnDParent : 6AD1F73F
 	instance_destroy();
 
-	/// @DnDAction : YoYo Games.Common.Apply_To
-	/// @DnDVersion : 1
-	/// @DnDHash : 1549E749
-	/// @DnDApplyTo : {obj_controller}
+	/// @DnDAction : YoYo Games.Common.Execute_Script
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 4578D938
+	/// @DnDInput : 2
 	/// @DnDParent : 6AD1F73F
-	with(obj_controller) {
-		/// @DnDAction : YoYo Games.Instance Variables.Set_Health
-		/// @DnDVersion : 1
-		/// @DnDHash : 3B4D9EE1
-		/// @DnDParent : 1549E749
-		/// @DnDArgument : "health" "-20*global.difficulty"
-		/// @DnDArgument : "health_relative" "1"
-		if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
-		__dnd_health += real(-20*global.difficulty);
-	}
+	/// @DnDArgument : "script" "damage_player"
+	/// @DnDArgument : "arg" "20"
+	/// @DnDArgument : "arg_1" "0"
+	script_execute(damage_player, 20, 0);
 }

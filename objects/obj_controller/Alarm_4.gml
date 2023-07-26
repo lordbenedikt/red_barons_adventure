@@ -1,8 +1,8 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 383431D7
-/// @DnDArgument : "expr" "room==room_main_level1"
-if(room==room_main_level1)
+/// @DnDArgument : "expr" "room==room_grasslands"
+if(room==room_grasslands)
 {
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1

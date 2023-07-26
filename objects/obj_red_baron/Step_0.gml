@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 556448D6
+/// @DnDArgument : "expr" "max(0,damage_cooldown-1)"
+/// @DnDArgument : "var" "damage_cooldown"
+damage_cooldown = max(0,damage_cooldown-1);
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 42425512
@@ -172,11 +179,12 @@ if(y_movement == 0)
 	}
 }
 
-/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
+/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 5D66170E
-/// @DnDArgument : "angle" "0 + tilt_angle"
-image_angle = 0 + tilt_angle;
+/// @DnDHash : 223D8451
+/// @DnDArgument : "expr" "tilt_angle"
+/// @DnDArgument : "var" "image_angle"
+image_angle = tilt_angle;
 
 /// @DnDAction : YoYo Games.Common.Apply_To
 /// @DnDVersion : 1

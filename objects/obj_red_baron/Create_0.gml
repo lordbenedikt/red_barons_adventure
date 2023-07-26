@@ -1,13 +1,16 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 57D52219
-/// @DnDArgument : "code" "left = false;$(13_10)right = false;$(13_10)up = false;$(13_10)down = false;$(13_10)$(13_10)light_is_on = false;"
+/// @DnDArgument : "code" "left = false;$(13_10)right = false;$(13_10)up = false;$(13_10)down = false;$(13_10)$(13_10)armour = 1;$(13_10)damage_cooldown = 0;$(13_10)light_is_on = true$(13_10)mini_guns = [];$(13_10)"
 left = false;
 right = false;
 up = false;
 down = false;
 
-light_is_on = false;
+armour = 1;
+damage_cooldown = 0;
+light_is_on = true
+mini_guns = [];
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
