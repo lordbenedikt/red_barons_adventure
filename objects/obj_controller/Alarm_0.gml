@@ -66,8 +66,8 @@ if(in_game == 1)
 			/// @DnDArgument : "function" "spawn_on_right_limit_y"
 			/// @DnDArgument : "arg" "obj_enemy"
 			/// @DnDArgument : "arg_1" "0"
-			/// @DnDArgument : "arg_2" "global.y_limit"
-			spawn_on_right_limit_y(obj_enemy, 0, global.y_limit);
+			/// @DnDArgument : "arg_2" "global.y_limit-100"
+			spawn_on_right_limit_y(obj_enemy, 0, global.y_limit-100);
 		}
 	}
 

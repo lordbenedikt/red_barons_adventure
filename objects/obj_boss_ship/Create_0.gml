@@ -204,7 +204,7 @@ laser_sound = undefined;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 1124C880
-/// @DnDArgument : "code" "/// @description spawn machine_gun$(13_10)$(13_10)machinegun = new_gun(id, 148, -195, -1);$(13_10)machinegun.min_angle = -45;$(13_10)machinegun.max_angle = 80;$(13_10)machinegun.target_id = obj_red_baron;$(13_10)machinegun.shooting_pattern = get_shooting_pattern(ShootingPatterns.MachineGun);$(13_10)machinegun.shoot_sound = snd_gunshot;$(13_10)machinegun.shoot_sound_gain = 0.5;$(13_10)machinegun.image_angle_offset = -13;$(13_10)machinegun.next_shot = irandom(60);$(13_10)machinegun.rotation_speed = 2;$(13_10)machinegun.sprite_index = spr_machine_gun;$(13_10)machinegun.bullet_type = get_bullet_type(BulletTypes.Tank);$(13_10)machinegun.length = 70;$(13_10)machinegun.image_xscale = image_xscale;$(13_10)machinegun.image_yscale = image_xscale;$(13_10)"
+/// @DnDArgument : "code" "/// @description spawn machine_gun$(13_10)$(13_10)machinegun = new_gun(id, 148, -195, -1);$(13_10)machinegun.min_angle = -45;$(13_10)machinegun.max_angle = 80;$(13_10)machinegun.target_id = obj_red_baron;$(13_10)machinegun.shooting_pattern = get_shooting_pattern(ShootingPatterns.MachineGun);$(13_10)machinegun.shoot_sound = snd_gunshot;$(13_10)machinegun.shoot_sound_gain = 0.5;$(13_10)machinegun.image_angle_offset = -13;$(13_10)machinegun.next_shot = irandom(60);$(13_10)machinegun.rotation_speed = 2;$(13_10)machinegun.sprite_index = spr_machine_gun;$(13_10)machinegun.bullet_type = get_bullet_type(BulletTypes.MachineGun);$(13_10)machinegun.length = 70;$(13_10)machinegun.image_xscale = image_xscale;$(13_10)machinegun.image_yscale = image_xscale;$(13_10)"
 /// @description spawn machine_gun
 
 machinegun = new_gun(id, 148, -195, -1);
@@ -218,7 +218,7 @@ machinegun.image_angle_offset = -13;
 machinegun.next_shot = irandom(60);
 machinegun.rotation_speed = 2;
 machinegun.sprite_index = spr_machine_gun;
-machinegun.bullet_type = get_bullet_type(BulletTypes.Tank);
+machinegun.bullet_type = get_bullet_type(BulletTypes.MachineGun);
 machinegun.length = 70;
 machinegun.image_xscale = image_xscale;
 machinegun.image_yscale = image_xscale;

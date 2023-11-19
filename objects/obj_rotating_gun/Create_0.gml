@@ -21,7 +21,6 @@ ammo = 0;
 
 shooting_pattern = get_shooting_pattern(ShootingPatterns.FourShots);
 bullet_type = get_bullet_type(BulletTypes.Tank);
-bullet_type.scale = 1;
 length = 150;
 
 shoot_sound = snd_tank_gunshot;
@@ -107,6 +106,11 @@ shoot = function() {
 	if (!is_undefined(bullet_type.damage)) {
 		_bullet.damage = bullet_type.damage;
 	}
+	if (!is_undefined(bullet_type.sprite)) {
+		_bullet.sprite_index = bullet_type.sprite;
+	}
+	_bullet.image_xscale = bullet_type.scale;
+	_bullet.image_yscale = bullet_type.scale;
 }
 
 custom_draw_self = function() {

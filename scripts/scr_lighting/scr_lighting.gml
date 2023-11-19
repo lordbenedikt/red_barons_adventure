@@ -1,3 +1,11 @@
+function draw_light(sprite,subimg,x,y,xscale,yscale,rot,col,alpha) {
+	array_push(global.light_draw_commands,[sprite,subimg,x,y,xscale,yscale,rot,col,alpha])
+}
+
+function draw_sprite_ext_arr(args) {
+	draw_sprite_ext(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8]);
+}
+
 function draw_light_fire_bullet(){
 
 }

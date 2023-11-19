@@ -22,21 +22,24 @@ function ShootingPattern(_interval_shoot, _interval_reload, _ammo) constructor {
 }
 
 global.BulletTypeArray = [
-	new BulletType(obj_enemy_bullet, 15),		// Tank
-	new BulletType(obj_bullet_friendly, 20),	// Friendly
+	new BulletType(obj_enemy_bullet, 15, spr_tank_bullet, 1, 10),				// Tank
+	new BulletType(obj_bullet_friendly, spr_bullet_red_baron, 20, 1, 33.4),		// Friendly
+	new BulletType(obj_enemy_bullet, 15, spr_bullet_sharp, 0.5, 5),
 ];
 enum BulletTypes {
 	Tank,
 	Friendly,
+	MachineGun,
 }
 function get_bullet_type(bullet_type) {
 	return global.BulletTypeArray[bullet_type];
 }
-function BulletType(_obj, _speed) constructor {
+function BulletType(_obj, _speed, _sprite, _scale=1, _damage=10) constructor {
 	obj = _obj;
 	speed = _speed;
-	scale = 1;
-	damage = undefined;
+	scale = _scale;
+	sprite = _sprite;
+	damage = _damage;
 }
 
 function shoot_bullet(_x, _y, _layer, _obj_index, _dir, _speed, 

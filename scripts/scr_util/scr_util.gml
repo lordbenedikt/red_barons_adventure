@@ -43,12 +43,12 @@ function Vec2(_x, _y) constructor {
 		if (scalar==0) { return undefined; }
 		return new Vec2(x / scalar, y / scalar);
 	}
-	function mag(v) {
+	function mag() {
 		return sqrt(sqr(x) + sqr(y));
 	}
-	function normalized(v) {
-		var _mag = mag(v);
+	function normalized() {
+		var _mag = mag();
 		if (_mag==0) { return undefined; }
-		return v.divide();
+		return self.divide(_mag);
 	}
 }

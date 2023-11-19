@@ -1,4 +1,7 @@
 function difficulty_multiplier() {
+	if (global.level_done) {
+		return 0;
+	}
 	var difficulty_multipliers = [0.4, 0.65, 1, 1.2, 1.4];
 	return difficulty_multipliers[global.difficulty_level];
 }
@@ -92,6 +95,14 @@ function spawn_vehicle(obj_index, min_scale = 1, max_scale = 1) {
 	obj_id.y = 665;
 }
 
+function spawn_at_y_with_speed(enemy_type, _y, _speed) {
+	show_debug_message("framecount: {0}", current_time);
+	obj_id = instance_create_layer(0, 0, "Instances", enemy_type)
+	obj_id.x = room_width + obj_id.sprite_width / 2;
+	obj_id.y = _y;
+	obj_id.object_speed = _speed;
+}
+
 function spawn_on_right(enemy_type) {
 	obj_id = instance_create_layer(0, 0, "Instances", enemy_type)
 	
@@ -147,9 +158,6 @@ function damage_player(_amount, _cooldown) {
 function start_game() {
 	audio_play_sound(snd_main_menu_click, 0, 0, 1.0, undefined, 1.0);
 
-	sprite_index = spr_start_button;
-	image_index = 0;
-
 	with(obj_controller) {
 		in_game = 1;
 	
@@ -159,7 +167,21 @@ function start_game() {
 	}
 }
 
+function do_nothing() {}
+
 function level_done() {
-	fade_out(global.fade_out_duration);
-	obj_controller.alarm[1] = global.fade_out_duration * 4;
+	if instance_exists(obj_red_baron) {
+		fade_out(global.fade_out_duration);
+		global.level_done = true;
+		obj_controller.alarm[1] = global.fade_out_duration * 4;
+	}
+}
+
+function next_level_or_restart() {
+	if (room==room_game_over || room==room_victory || obj_controller.game_over) {
+		game_restart();
+	} else {
+		room_goto_next();
+		obj_controller.__dnd_health = 100;
+	}
 }

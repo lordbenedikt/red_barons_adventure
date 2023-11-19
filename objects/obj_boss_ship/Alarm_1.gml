@@ -7,5 +7,5 @@ laser_on = true;
 if (laser_sound) {
 	audio_stop_sound(laser_sound);
 }
-laser_sound = audio_play_sound(snd_laser, 0, 1, 0);
+laser_sound = audio_play_sound(snd_alien_laser, 0, 1, 0);
 audio_sound_gain(laser_sound, 1.5, 40);

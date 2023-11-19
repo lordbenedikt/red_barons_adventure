@@ -23,6 +23,20 @@ bullets_left = fast_firing;
 /// @DnDArgument : "var" "gun_direction"
 gun_direction = 0;
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 3C958C6D
+/// @DnDArgument : "expr" "200"
+/// @DnDArgument : "var" "drone_cooldown"
+drone_cooldown = 200;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 1BFAE928
+/// @DnDArgument : "expr" "drone_cooldown"
+/// @DnDArgument : "var" "drone_countdown"
+drone_countdown = drone_cooldown;
+
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 003F94EA

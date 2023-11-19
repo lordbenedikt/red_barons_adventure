@@ -8,7 +8,8 @@ if room=room_main_menu {
 	start_game();
 }
 
-/// @DnDAction : YoYo Games.Rooms.Next_Room
-/// @DnDVersion : 1
-/// @DnDHash : 5A255E32
-room_goto_next();
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 12CEC9FA
+/// @DnDArgument : "script" "next_level_or_restart"
+script_execute(next_level_or_restart);

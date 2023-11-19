@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5974f953-6742-4fd8-915c-62223b4ebb93",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f4ab2be-e7b6-47f8-87ed-96d18a51d1fc",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 556,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e3a740d0-80d9-4dd3-aa36-329cd11e3163","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce538539-c665-4c27-b1b7-89e84dffacd1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "enemies",
-    "path": "folders/Sprites/enemies.yy",
+    "name": "zeppelin",
+    "path": "folders/Sprites/enemies/zeppelin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5974f953-6742-4fd8-915c-62223b4ebb93","path":"sprites/spr_zeppelin/spr_zeppelin.yy",},},},"Disabled":false,"id":"7b223322-0506-4497-ad85-42f263d22dc4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9f4ab2be-e7b6-47f8-87ed-96d18a51d1fc","path":"sprites/spr_zeppelin/spr_zeppelin.yy",},},},"Disabled":false,"id":"c27370bf-5906-4b98-8fb8-590ef76948a2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

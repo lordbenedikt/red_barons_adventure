@@ -1,10 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 6350475E
-/// @DnDArgument : "code" "/// @description$(13_10)$(13_10)show_debug_message("alarm[1]={0}",alarm[1]);$(13_10)$(13_10)if (lightning_is_hitting) {$(13_10)	lightning_intensity = min(max(0,lightning_intensity+0.1),1);$(13_10)} else {$(13_10)	lightning_intensity = max(0,lightning_intensity-0.03);$(13_10)}$(13_10)$(13_10)cheat()$(13_10)"
+/// @DnDArgument : "code" "/// @description$(13_10)$(13_10)$(13_10)exec_scheduled_actions()$(13_10)$(13_10)if (lightning_is_hitting) {$(13_10)	lightning_intensity = min(max(0,lightning_intensity+0.1),1);$(13_10)} else {$(13_10)	lightning_intensity = max(0,lightning_intensity-0.03);$(13_10)}$(13_10)$(13_10)cheat()$(13_10)"
 /// @description
 
-show_debug_message("alarm[1]={0}",alarm[1]);
+
+exec_scheduled_actions()
 
 if (lightning_is_hitting) {
 	lightning_intensity = min(max(0,lightning_intensity+0.1),1);
@@ -41,11 +42,11 @@ if(room == room_mountains)
 			/// @DnDVersion : 1
 			/// @DnDHash : 18505E92
 			/// @DnDParent : 1F268D88
-			/// @DnDArgument : "xpos" "room_width + 500"
+			/// @DnDArgument : "xpos" "room_width*2"
 			/// @DnDArgument : "ypos" "room_height / 2"
 			/// @DnDArgument : "objectid" "obj_zeppelin"
 			/// @DnDSaveInfo : "objectid" "obj_zeppelin"
-			instance_create_layer(room_width + 500, room_height / 2, "Instances", obj_zeppelin);
+			instance_create_layer(room_width*2, room_height / 2, "Instances", obj_zeppelin);
 		
 			/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1

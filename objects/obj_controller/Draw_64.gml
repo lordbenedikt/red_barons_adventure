@@ -1,22 +1,4 @@
-if(help == 1)
-{
-	draw_fit_room_size(spr_important_menu);
-}
-
-if(help == 2)
-{
-	draw_fit_room_size(spr_controls);
-}
-
-if(help == 3)
-{
-	draw_fit_room_size(spr_powerups_menu);
-}
-
-if(help == 4)
-{
-	draw_fit_room_size(spr_objectives);
-}
+global.GUI.update_and_draw();
 
 if(in_game == 1)
 {

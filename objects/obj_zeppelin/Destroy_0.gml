@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 290011B2
+/// @DnDArgument : "script" "instance_destroy"
+/// @DnDArgument : "arg" "lights"
+script_execute(instance_destroy, lights);
+
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 7D268AA1

@@ -1,8 +1,9 @@
 /// @description Setup
-show_debug_message("mod={0}", -10 % 3);
 global.difficulty_level = 2;
 global.prev_powerup_at = 0;
 global.cooldown_time = 120;
+global.level_done = false;
+global.light_draw_commands = [];
 
 music_on = true;
 help = 0;

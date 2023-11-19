@@ -10,7 +10,6 @@ global.cheat_codes[? "rocketman"] = false;
 global.cheat_codes[? "gimmebombz"] = false;
 
 function cheat() {
-	show_debug_message("keyboard_string: {0}", keyboard_string);
 	if keyboard_check_pressed(vk_anykey) {
 		var keys = ds_map_keys_to_array(global.cheat_codes);
 		for (var i = 0; i<array_length(keys); i++) {
@@ -24,7 +23,6 @@ function cheat() {
 				global.cheat_codes[? cur_key] = !global.cheat_codes[? cur_key];
 				keyboard_string = "";
 				update_cheats();
-				show_debug_message("'{0}'={1}", cur_key, global.cheat_codes[? cur_key] ? "on" : "off");
 			}
 		}
 	}
@@ -34,9 +32,9 @@ function update_cheats() {
 	// Go to next room
 	if (cheat_is_active("nextroom")) {
 		global.cheat_codes[? "nextroom"] = false;
-		if (room!=room_main_menu) {
+		if (room!=room_main_menu && room!=room_game_over && room!=room_victory) {
 			room_goto_next();
-		}
+		} 
 	}
 	
 	// Spawn mini guns

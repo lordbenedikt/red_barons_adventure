@@ -8,6 +8,6 @@ instance_destroy();
 /// @DnDHash : 3801CDBE
 /// @DnDInput : 2
 /// @DnDArgument : "script" "damage_player"
-/// @DnDArgument : "arg" "10"
+/// @DnDArgument : "arg" "damage"
 /// @DnDArgument : "arg_1" "0"
-script_execute(damage_player, 10, 0);
+script_execute(damage_player, damage, 0);

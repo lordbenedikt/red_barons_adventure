@@ -50,7 +50,7 @@ function play_bg_music() {
 		return audio_play_sound(snd_the_red_baron,0,1,
 		music_on ? get_default_gain(BGMusicDefaultGain.TheRedBaron) : 0);
 	} else if room == room_game_over {
-		return audio_play_sound(snd_music_defeat,0,1,
+		return audio_play_sound(snd_music_defeat,0,0,
 		music_on ? get_default_gain(BGMusicDefaultGain.Defeat) : 0);
 	} else if room == room_victory {
 		return audio_play_sound(snd_victory,0,0,

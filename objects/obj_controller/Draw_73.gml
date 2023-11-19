@@ -2,6 +2,7 @@
 
 // Surfaces are volatile 
 // Always check that they haven't been destroyed
+
 if (room == room_sunset) {
 	if (surface_exists(filter_surface)) {
 	    surface_set_target(filter_surface);
@@ -52,9 +53,22 @@ if (room == room_sunset) {
 }
 
 if (room == room_mountains) {
+	darkness = 0.85;
 	if (surface_exists(filter_surface)) {
 	    surface_set_target(filter_surface);
-		draw_clear_alpha(c_black, 0.70);
+		draw_clear_alpha(c_black, 1);
+		
+		// draw stars and moon
+		gpu_set_blendmode(bm_subtract);
+		draw_sprite_ext(bg_night_lights,0,0,0,
+			room_width/sprite_get_width(bg_night_lights), room_height/sprite_get_height(bg_night_lights),
+			0,c_white,0.5);
+		gpu_set_blendmode(bm_normal);
+		with(all) {
+			if (sprite_exists(sprite_index)) {
+				draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_black,1);
+			}
+		}
 
 		with(obj_bullet_red_baron) {
 			if on_fire {
@@ -89,10 +103,32 @@ if (room == room_mountains) {
 	}
 }
 
-if (room == room_sunset || room_mountains) {
+if (room == room_sunset || room == room_mountains) {
 	if (!surface_exists(filter_surface)) {
 	    filter_surface = surface_create(room_width, room_height);
 	} else {
+		surface_set_target(filter_surface);
+		
+		// draw lights enqueued with draw_light
+		gpu_set_blendmode(bm_subtract);
+		for(var i=0; i<array_length(global.light_draw_commands); i++) {
+			draw_sprite_ext_arr
+			(global.light_draw_commands[i]);
+		}
+		global.light_draw_commands = [];
+		
+		// multiply filter_surface with darkness multiplier
+		if (room == room_mountains) {
+			draw_set_color(c_white);
+			draw_set_alpha(1-darkness);
+			draw_rectangle(0,0,surface_get_width(filter_surface),surface_get_height(filter_surface),false);
+			draw_set_alpha(1);
+
+		}
+		
+		gpu_set_blendmode(bm_normal);
+		surface_reset_target();
+		
 	    if (view_current == 0) {
 	        draw_surface(filter_surface, 0, 0);
 	    }

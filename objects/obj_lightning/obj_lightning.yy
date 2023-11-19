@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "bg_lightning",
-    "path": "sprites/bg_lightning/bg_lightning.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

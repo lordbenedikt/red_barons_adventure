@@ -86,6 +86,23 @@ else
 	var min_speed = max((x - min_x) / 30, -max_speed_mag)
 	vel_x += acc_x
 	vel_x = max(-min_speed, min(max_speed,vel_x))
+
+	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDVersion : 1
+	/// @DnDHash : 76EC7748
+	/// @DnDParent : 1C210F19
+	/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)$(13_10)if (instance_number(obj_drone)<3 && __dnd_health < 70) {$(13_10)	drone_countdown--;$(13_10)	if (drone_countdown <= 0) {$(13_10)		drone_countdown = drone_cooldown;$(13_10)		var drone = instance_create_layer(x,y-100,layer,obj_drone);$(13_10)		drone.parent_id = id;$(13_10)	}$(13_10)}"
+	/// @description Execute Code
+	
+	
+	if (instance_number(obj_drone)<3 && __dnd_health < 70) {
+		drone_countdown--;
+		if (drone_countdown <= 0) {
+			drone_countdown = drone_cooldown;
+			var drone = instance_create_layer(x,y-100,layer,obj_drone);
+			drone.parent_id = id;
+		}
+	}
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
