@@ -16,7 +16,6 @@ var second_row_y = zeppelin_id.y-34*zeppelin_id.image_yscale;
 
 // draw headlights and lantern
 draw_sprite_ext(spr_zeppelin_headlights, 0, headlights_x, headlights_y,zeppelin_id.image_xscale,zeppelin_id.image_yscale,0,c_white,headlights_intensity);
-draw_sprite_ext(spr_zeppelin_lanterns, 0, lanterns_x, lanterns_y,zeppelin_id.image_xscale,zeppelin_id.image_yscale,0,c_white,headlights_intensity);
 
 // draw light for headlights and lantern
 draw_light(spr_light_cone_zeppelin, 0, headlights_x, headlights_y, zeppelin_id.image_xscale, zeppelin_id.image_yscale, 0, c_white, headlights_intensity);

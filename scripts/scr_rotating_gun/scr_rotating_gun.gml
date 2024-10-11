@@ -1,20 +1,19 @@
-/*enum ShootingPatterns {
-
-}*/
-
 global.ShootingPatternArray = [
 	new ShootingPattern(0, 60, 1),		// Single
 	new ShootingPattern(20, 140, 4),	// FourShots
 	new ShootingPattern(4, 120, 12),
 ];
+
 enum ShootingPatterns {
 	Single,
 	FourShots,
 	MachineGun,
 }
+
 function get_shooting_pattern(pattern) {
 	return global.ShootingPatternArray[pattern];
 }
+
 function ShootingPattern(_interval_shoot, _interval_reload, _ammo) constructor {
 	interval_shoot = _interval_shoot;
 	interval_reload = _interval_reload;
@@ -26,14 +25,17 @@ global.BulletTypeArray = [
 	new BulletType(obj_bullet_friendly, spr_bullet_red_baron, 20, 1, 33.4),		// Friendly
 	new BulletType(obj_enemy_bullet, 15, spr_bullet_sharp, 0.5, 5),
 ];
+
 enum BulletTypes {
 	Tank,
 	Friendly,
 	MachineGun,
 }
+
 function get_bullet_type(bullet_type) {
 	return global.BulletTypeArray[bullet_type];
 }
+
 function BulletType(_obj, _speed, _sprite, _scale=1, _damage=10) constructor {
 	obj = _obj;
 	speed = _speed;
@@ -86,7 +88,7 @@ function new_gun(_parent, _x, _y, _depth) {
 	return _gun;
 }
 
-function new_tank_gun(_parent, _x, _y, _depth, _scale) {
+function new_tank_gun(_parent, _x, _y, _depth, _scale=1) {
 	var _gun = new_gun(_parent, _x, _y, _depth);
 	_gun.sprite_index = spr_enemy_tank_gun;
 	_gun.image_angle_offset = 180;

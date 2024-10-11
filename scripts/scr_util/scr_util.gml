@@ -1,13 +1,18 @@
-function angle_is_between(angle, min, max, excl=false) {
-	if ( abs(angle_difference(min,max)) >= 360 ) { return true; }
-	var _angle = ((angle % 360) + 360) % 360;
-	var _min = ((min % 360) + 360) % 360;
-	var _max = max + (_min - min);
-	if (_max >= 360) {
-		return _angle < (_max % 360) || angle > _min;
+function set_sprite_randomly(_obj_id, _sprite_array) {
+	var _i = irandom(array_length(_sprite_array)-1);
+	_obj_id.sprite_index = _sprite_array[_i];
+}
+
+function angle_is_between(_angle, _min, _max, _excl=false) {
+	if ( abs(angle_difference(_min,_max)) >= 360 ) { return true; }
+	var _angle360 = ((_angle % 360) + 360) % 360;
+	var _min360 = ((_min % 360) + 360) % 360;
+	var _max360 = _max + (_min360 - _min);
+	if (_max360 >= 360) {
+		return _angle360 < (_max360 % 360) || _angle > _min360;
 	} else {
-		return excl ? is_between_exclusive(_angle, _min, _max)
-			: is_between(_angle, _min, _max);
+		return _excl ? is_between_exclusive(_angle360, _min360, _max360)
+			: is_between(_angle360, _min360, _max360);
 	}
 }
 

@@ -5,6 +5,20 @@
 /// @DnDArgument : "arg" "lights"
 script_execute(instance_destroy, lights);
 
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 1B329426
+/// @DnDArgument : "script" "instance_destroy"
+/// @DnDArgument : "arg" "lantern_first"
+script_execute(instance_destroy, lantern_first);
+
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 65757506
+/// @DnDArgument : "script" "instance_destroy"
+/// @DnDArgument : "arg" "lantern_second"
+script_execute(instance_destroy, lantern_second);
+
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 7D268AA1

@@ -53,9 +53,9 @@ is_entering = 1;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 17FFCCA5
-/// @DnDArgument : "expr" "40*difficulty_multiplier()"
+/// @DnDArgument : "expr" "80"
 /// @DnDArgument : "var" "armour"
-armour = 40*difficulty_multiplier();
+armour = 80;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

@@ -21,7 +21,7 @@ function show_slides(sprites=undefined) {
 	if is_undefined(sprites) {
 		if (global.GUI.slide_page_number == -1) return false;
 		// continue to next page
-		if keyboard_check_pressed(vk_space) {
+		if keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left) {
 			global.GUI.slide_page_number += 1;
 			if global.GUI.slide_page_number==array_length(_sprites) {
 				global.GUI.slide_page_number = -1;
@@ -35,8 +35,4 @@ function show_slides(sprites=undefined) {
 		_sprites = sprites;
 		global.GUI.slide_page_number = 0;
 	}
-}
-
-function show_help_slides() {
-	show_slides([spr_important_menu,spr_controls,spr_powerups_menu,spr_objectives]);
 }

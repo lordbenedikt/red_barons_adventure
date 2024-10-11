@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_damage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_damage",
+  "parent":{
+    "name":"Game",
+    "path":"folders/Scripts/Game.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

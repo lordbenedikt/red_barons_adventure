@@ -3,6 +3,8 @@
 // Surfaces are volatile 
 // Always check that they haven't been destroyed
 
+var darkness = 0;
+
 if (room == room_sunset) {
 	if (surface_exists(filter_surface)) {
 	    surface_set_target(filter_surface);
@@ -53,7 +55,7 @@ if (room == room_sunset) {
 }
 
 if (room == room_mountains) {
-	darkness = 0.85;
+	darkness = 0.1;
 	if (surface_exists(filter_surface)) {
 	    surface_set_target(filter_surface);
 		draw_clear_alpha(c_black, 1);
@@ -117,20 +119,11 @@ if (room == room_sunset || room == room_mountains) {
 		}
 		global.light_draw_commands = [];
 		
-		// multiply filter_surface with darkness multiplier
-		if (room == room_mountains) {
-			draw_set_color(c_white);
-			draw_set_alpha(1-darkness);
-			draw_rectangle(0,0,surface_get_width(filter_surface),surface_get_height(filter_surface),false);
-			draw_set_alpha(1);
-
-		}
-		
 		gpu_set_blendmode(bm_normal);
 		surface_reset_target();
 		
 	    if (view_current == 0) {
-	        draw_surface(filter_surface, 0, 0);
+	        draw_surface_ext(filter_surface, 0, 0, 1, 1, 0, c_white, 1-darkness);
 	    }
 	}
 }

@@ -6,6 +6,8 @@ function draw_sprite_ext_arr(args) {
 	draw_sprite_ext(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8]);
 }
 
+/// @description Takes a human-readable position for which row and spot the battler should be on and returns the correct position for their side of the field
+/// @function battleGridDecode(enum:position, real:owner)
 function draw_light_fire_bullet(){
 
 }

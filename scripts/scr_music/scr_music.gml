@@ -1,6 +1,3 @@
-// Skriptelemente wurden für v2.3.0 geändert, weitere Informationen sind unter
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
-
 global.music_volume = 1;
 
 enum BGMusicDefaultGain {
@@ -12,6 +9,7 @@ enum BGMusicDefaultGain {
 	Victory,
 	MainMenu
 }
+
 function get_default_gain(music_index) {
 	switch (music_index) {
 		case BGMusicDefaultGain.Fliegermarsch: return 0.5 * global.music_volume;
@@ -24,6 +22,7 @@ function get_default_gain(music_index) {
 		default: return 0.25;
 	}
 }
+
 function get_bg_music_default_gain(level_index) {
 	switch (level_index) {
 		case room_sunset: return get_default_gain(BGMusicDefaultGain.Fliegermarsch);
