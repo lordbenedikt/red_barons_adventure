@@ -19,6 +19,10 @@ for (i = 0; i<max_difficulty; i++) {
 	}
 	draw_sprite(spr_star, i<=global.difficulty_level ? 0 : 1, _x, y);
 }
-if hover_difficulty>=0 && mouse_check_button_pressed(mb_left) {
+if (hover_difficulty >= 0 && mouse_check_button_pressed(mb_left)) {
 	global.difficulty_level = hover_difficulty;
+	global.start_from_level = min(global.highest_unlocked_level[hover_difficulty],global.start_from_level);
+	if (global.highest_unlocked_boss[hover_difficulty] < global.start_from_level) {
+		global.start_from_boss = false;
+	}
 }

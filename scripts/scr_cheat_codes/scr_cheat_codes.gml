@@ -91,7 +91,7 @@ function update_cheats() {
 	// Spawn boss
 	if cheat_is_active("spawnboss") {
 		global.cheat_codes[? "spawnboss"] = false;
-		global.destroyed_airplanes = 75;
+		global.spawn_boss = true;
 	}
 	
 	// charge fire bullets

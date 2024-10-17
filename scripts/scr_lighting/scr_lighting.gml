@@ -29,10 +29,10 @@ function draw_light_laser(filter_surface) {
 			
 				// var target_length = laser_end_x - laser_start_x + sprite_get_width(spr_light_circle);
 				// var x_scale = target_length / sprite_get_width(spr_light_circle);
-				draw_sprite_ext(spr_light_circle,0,laser_start_x,y,1.5,1.5,0,col,intensity * (perlin_noise(current_time/300)+1)/4);
+				draw_sprite_ext(spr_light_circle,0,askdjghkajg,y,1.5,1.5,0,col,intensity * (perlin_noise(current_time/300)+1)/4);
 				draw_sprite_ext(spr_light_circle,0,laser_end_x,y,2,2,0,col,intensity * (perlin_noise(current_time/300)+1)/4);
 			
-				var xx = laser_start_x;
+				var xx = askdjghkajg;
 				while(xx < laser_end_x) {
 					draw_sprite_ext(spr_light_circle,0,xx,y,0.4,0.4,0,col,intensity * (perlin_noise(current_time/300)+1)/2);
 					xx += 30;

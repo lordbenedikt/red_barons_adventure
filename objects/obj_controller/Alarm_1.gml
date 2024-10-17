@@ -1,15 +1,9 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
-/// @DnDVersion : 1
-/// @DnDHash : 0D381545
-/// @DnDArgument : "code" "/// @description Next Room$(13_10)$(13_10)if room=room_main_menu {$(13_10)	start_game();$(13_10)}"
 /// @description Next Room
 
-if room=room_main_menu {
+if (room=room_main_menu) {
 	start_game();
+	room_goto(global.level_order[global.start_from_level]);
+	global.spawn_boss = global.start_from_boss;
+} else {
+	next_level_or_restart();
 }
-
-/// @DnDAction : YoYo Games.Common.Execute_Script
-/// @DnDVersion : 1.1
-/// @DnDHash : 12CEC9FA
-/// @DnDArgument : "script" "next_level_or_restart"
-script_execute(next_level_or_restart);

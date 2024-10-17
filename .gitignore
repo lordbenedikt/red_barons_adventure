@@ -1,0 +1,54 @@
+# Ignore asset files, these are either xcf or duplicates
+/assets/
+
+# Ignore compiled game files
+*.win
+*.zip
+*.dll
+*.dmg
+*.rpm
+*.deb
+*.app
+*.exe
+*.ipa
+*.apk
+
+# Ignore intermediate build files and logs
+*.yyz
+*.log
+*.iPhone
+*.ios
+*.Android
+*.PS4
+*.Switch
+*.mac
+*.Linux
+*.HTML5
+*.Ubuntu
+*.Windows
+*.TVOS
+*.UWP
+
+# Ignore Mac-specific hidden files
+.DS_Store
+
+# Ignore GMS2 IDE-specific cache and config
+*.yyp
+.vscode/
+.idea/
+.gitattributes
+.gmx/
+*.yyproj
+*.gp/
+
+# Ignore output directory (Compiled Game)
+*/output/
+
+# Ignore temporary backups created by GMS2
+*.backup
+*.autosave
+
+# Ignore project files that can be regenerated
+__MACOSX/
+*_testproject.*
+*_sandbox.*

@@ -10,6 +10,13 @@ function GuiStruct() constructor {
 	}
 }
 
+function darken_on_hover(blend_color=#E0E0E0) {
+	if (collision_point(mouse_x,mouse_y,id,true,false))
+		image_blend = blend_color;
+	else
+		image_blend = c_white;
+}
+
 function start_button_func() {
 	obj_controller.alarm[1] = global.fade_out_duration;
 	fade_out(global.fade_out_duration);

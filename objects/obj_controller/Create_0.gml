@@ -4,6 +4,13 @@ global.prev_powerup_at = 0;
 global.cooldown_time = 120;
 global.level_done = false;
 global.light_draw_commands = [];
+global.highest_unlocked_boss = [-1,-1,-1,-1,-1];
+global.highest_unlocked_level = [0,0,0,0,0]; 
+global.spawn_boss = false;
+global.level_order = [room_sunset, room_grasslands, room_mountains];
+global.target_destroyed_enemies = [75, 75, 75];
+global.start_from_level = 0;
+global.start_from_boss = false;
 
 music_on = true;
 help = 0;
@@ -11,7 +18,6 @@ game_over = 0;
 __dnd_health = 100;
 in_game = 0;
 
-target_destroyed_enemies = [75, 75, 75];
 
 // Create Sunset Filter Surface
 filter_surface = surface_create(room_width, room_height);

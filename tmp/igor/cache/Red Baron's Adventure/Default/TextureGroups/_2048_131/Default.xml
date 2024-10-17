@@ -80,34 +80,37 @@
   <tpe x="1286" y="1817" tpage="default_5.bz2">spr_start_button_2267e46a-ce96-4241-b2e1-deb53dfe8b23.tpe</tpe>
   <tpe x="1240" y="958" tpage="default_6.bz2">spr_start_button_c8c29e12-8831-4aa9-ad91-aa503d1bf070.tpe</tpe>
   <tpe x="2" y="1954" tpage="default_1.bz2">spr_ground_top_a05de408-8cd3-4a39-9b82-970054e7cd5f.tpe</tpe>
-  <tpe x="1240" y="1171" tpage="default_6.bz2">font_destroyed_airplanes_font_destroyed_airplanes.tpe</tpe>
+  <tpe x="1240" y="1171" tpage="default_6.bz2">fnt_dialogue_fnt_dialogue.tpe</tpe>
+  <tpe x="1240" y="1431" tpage="default_6.bz2">font_destroyed_airplanes_font_destroyed_airplanes.tpe</tpe>
   <tpe x="1662" y="1368" tpage="default_5.bz2">spr_zeppelin_lantern_light_ac95ee60-b7a4-4058-a913-fed41279772f.tpe</tpe>
   <tpe x="1779" y="2" tpage="default_4.bz2">spr_tree_0_62399aa4-8ecb-4f6f-bd76-56dc924eafa5.tpe</tpe>
   <tpe x="1706" y="506" tpage="default_4.bz2">spr_missiles_powerup_fea2725b-f106-432f-aab5-5119259b0595.tpe</tpe>
-  <tpe x="1240" y="1431" tpage="default_6.bz2">spr_drone_gun_dd247289-8907-4f32-bdaa-95649648ba38.tpe</tpe>
+  <tpe x="1240" y="1691" tpage="default_6.bz2">spr_drone_gun_dd247289-8907-4f32-bdaa-95649648ba38.tpe</tpe>
   <tpe x="2" y="1948" tpage="default_3.bz2">spr_ground_middle_0f9a3f14-16be-4e22-bc2e-143f7db230a1.tpe</tpe>
-  <tpe x="1240" y="1663" tpage="default_6.bz2">spr_rock_1_c526a1f3-5dba-47f6-86b7-c8bbac6f45a1.tpe</tpe>
-  <tpe x="1634" y="1663" tpage="default_6.bz2">spr_enemy_tank_88952c39-245b-4c3f-aa32-cd3831bc6bfc.tpe</tpe>
+  <tpe x="1644" y="554" tpage="default_6.bz2">spr_rock_1_c526a1f3-5dba-47f6-86b7-c8bbac6f45a1.tpe</tpe>
+  <tpe x="1372" y="2" tpage="default_7.bz2">spr_enemy_tank_88952c39-245b-4c3f-aa32-cd3831bc6bfc.tpe</tpe>
   <tpe x="1846" y="1086" tpage="default_1.bz2">spr_fire_bullets_powerup_983ff3d9-07fd-48a9-aee0-600fb989b26d.tpe</tpe>
   <tpe x="1706" y="838" tpage="default_4.bz2">spr_rock_2_bc33adb3-f15e-4a41-bcae-d060d904ae09.tpe</tpe>
   <tpe x="0" y="0" tpage="default_15.bz2">_filter_underwater_noise_sprite_65d62f09-8194-4115-9cc4-ad2fdfff9926.tpe</tpe>
-  <tpe x="1779" y="1068" tpage="default_4.bz2">spr_rock_0_ba9c80dc-4569-4bb2-aba9-4094bf7b40f7.tpe</tpe>
-  <tpe x="1240" y="1882" tpage="default_6.bz2">spr_drone_b36b6dae-3c78-42ab-8e4b-1af171284e77.tpe</tpe>
-  <tpe x="1634" y="1856" tpage="default_6.bz2">spr_drone_b614a749-632c-4c15-965c-fce15b24e680.tpe</tpe>
-  <tpe x="1779" y="1309" tpage="default_4.bz2">spr_hot_air_balloon_fd3221d2-81eb-42e9-a459-05a891bf49e3.tpe</tpe>
+  <tpe x="1779" y="1068" tpage="default_4.bz2">fnt_debug_fnt_debug.tpe</tpe>
+  <tpe x="1779" y="1328" tpage="default_4.bz2">spr_rock_0_ba9c80dc-4569-4bb2-aba9-4094bf7b40f7.tpe</tpe>
+  <tpe x="1644" y="773" tpage="default_6.bz2">spr_drone_b36b6dae-3c78-42ab-8e4b-1af171284e77.tpe</tpe>
+  <tpe x="1372" y="195" tpage="default_7.bz2">spr_drone_b614a749-632c-4c15-965c-fce15b24e680.tpe</tpe>
+  <tpe x="1756" y="1171" tpage="default_6.bz2">spr_hot_air_balloon_fd3221d2-81eb-42e9-a459-05a891bf49e3.tpe</tpe>
   <tpe x="1846" y="1557" tpage="default_1.bz2">spr_hot_air_balloon_ffc1228d-2814-4a89-8ebc-0c59f01a1a74.tpe</tpe>
   <tpe x="1848" y="1086" tpage="default_2.bz2">spr_hot_air_balloon_3587b232-b680-4224-9796-31793bd4dbfb.tpe</tpe>
   <tpe x="2" y="1911" tpage="default_4.bz2">spr_bush_e7ba7d72-833f-4208-84d8-8790e7962d8e.tpe</tpe>
   <tpe x="1848" y="1350" tpage="default_2.bz2">spr_lights_second_overlay_822230ea-853d-4e2a-9016-84c802716086.tpe</tpe>
   <tpe x="378" y="1911" tpage="default_4.bz2">spr_enemy_missile_3ea88470-ac49-4afd-9634-4d5c28c44321.tpe</tpe>
   <tpe x="1848" y="1638" tpage="default_2.bz2">spr_lights_first_overlay_32385b10-b97d-449c-8f91-25b1c9ac2853.tpe</tpe>
-  <tpe x="1756" y="1171" tpage="default_6.bz2">spr_help_button_bd28c5e8-0409-4ad6-8b96-3b625ce17350.tpe</tpe>
+  <tpe x="1756" y="1441" tpage="default_6.bz2">spr_help_button_bd28c5e8-0409-4ad6-8b96-3b625ce17350.tpe</tpe>
   <tpe x="846" y="1911" tpage="default_4.bz2">spr_grass_1_67e78a72-fe60-4efd-8f4f-0bcb56ab3d83.tpe</tpe>
   <tpe x="1807" y="1805" tpage="default_0.bz2">spr_zeppelin_headlights_706a18bc-0025-48a1-b5d8-2a72fa229221.tpe</tpe>
   <tpe x="1926" y="2" tpage="default_0.bz2">spr_lights_second_d1431b27-fc85-49c4-82ff-231333c22d27.tpe</tpe>
   <tpe x="1846" y="1827" tpage="default_1.bz2">spr_grass_0_a9ac0580-eb96-4be4-aa60-d555c79c3b15.tpe</tpe>
   <tpe x="1807" y="1957" tpage="default_0.bz2">spr_splash_47cfcaf1-67ba-4dba-bfc0-4b26ebc7b46e.tpe</tpe>
   <tpe x="1846" y="1942" tpage="default_1.bz2">spr_splash_210d2377-4950-4944-9fdc-bb7811540400.tpe</tpe>
+  <tpe x="1131" y="1858" tpage="default_2.bz2">spr_dialoguebox_94eb9b36-0004-4d03-89e6-8bb455b807b2.tpe</tpe>
   <tpe x="1926" y="216" tpage="default_0.bz2">spr_explosion_d617ce9f-3f9e-4f41-8ef1-442c391de055.tpe</tpe>
   <tpe x="1926" y="339" tpage="default_0.bz2">spr_explosion_4dbbaf4f-3d9f-4b16-852d-75d81679dff8.tpe</tpe>
   <tpe x="1926" y="462" tpage="default_0.bz2">spr_explosion_5ac0d081-c94e-4d9b-a7fd-737b0f8bd84a.tpe</tpe>
@@ -116,7 +119,7 @@
   <tpe x="1926" y="821" tpage="default_0.bz2">spr_bird_4a88fc63-c681-494d-8ca1-d7379e02cdfd.tpe</tpe>
   <tpe x="1926" y="930" tpage="default_0.bz2">spr_explosion_6b58e12e-579f-427f-b996-d9f7102f3cc2.tpe</tpe>
   <tpe x="1926" y="1048" tpage="default_0.bz2">spr_bird_99b52be0-616f-4546-b0e1-39bc46b28778.tpe</tpe>
-  <tpe x="1848" y="1895" tpage="default_2.bz2">spr_splash_2b076517-bff7-49b2-bbc4-ff67616c9426.tpe</tpe>
+  <tpe x="1131" y="1926" tpage="default_2.bz2">spr_splash_2b076517-bff7-49b2-bbc4-ff67616c9426.tpe</tpe>
   <tpe x="1926" y="1157" tpage="default_0.bz2">spr_explosion_d68b789f-69ef-4d0a-9139-95b00720ce16.tpe</tpe>
   <tpe x="1926" y="1272" tpage="default_0.bz2">spr_bird_8f0b11a7-842d-470e-b5a9-298d64bd9b2d.tpe</tpe>
   <tpe x="1926" y="1375" tpage="default_0.bz2">spr_bird_6fa942be-de7c-41d3-86fb-12bebbd6f645.tpe</tpe>
@@ -132,80 +135,130 @@
   <tpe x="1926" y="768" tpage="default_1.bz2">spr_explosion_e8ec1424-8104-4cbc-bb41-ba5b8cd1bd14.tpe</tpe>
   <tpe x="1926" y="879" tpage="default_1.bz2">spr_bird_bb4ceddb-9fe7-4d27-89eb-654d0a81698f.tpe</tpe>
   <tpe x="1926" y="976" tpage="default_1.bz2">spr_bird_115e86be-2080-4801-ba24-7ff62d77cf93.tpe</tpe>
-  <tpe x="1926" y="2" tpage="default_2.bz2">spr_bird_cf65dde4-875f-4fed-9c3c-ee752dfdbd02.tpe</tpe>
-  <tpe x="1926" y="98" tpage="default_2.bz2">spr_bird_1272dec5-3be1-4536-bff7-76d0b96583c8.tpe</tpe>
-  <tpe x="1926" y="198" tpage="default_2.bz2">spr_explosion_cd8ef4eb-32dc-4457-a0e1-b76ce8292548.tpe</tpe>
-  <tpe x="1926" y="311" tpage="default_2.bz2">spr_bird_3e003ab8-1bec-49a7-a8be-4e7808636776.tpe</tpe>
-  <tpe x="1926" y="410" tpage="default_2.bz2">spr_explosion_c222edb2-ea0d-49fe-b852-41cfa79297ad.tpe</tpe>
-  <tpe x="1848" y="1963" tpage="default_2.bz2">spr_splash_b0bf499b-874c-4141-ab13-8608054e878b.tpe</tpe>
-  <tpe x="1926" y="525" tpage="default_2.bz2">spr_explosion_f22a722e-ac89-477e-84bc-d018e898f97d.tpe</tpe>
-  <tpe x="1131" y="1858" tpage="default_2.bz2">spr_bomb_cb4673eb-2140-4eb9-8f8a-3a14411fff96.tpe</tpe>
-  <tpe x="1131" y="1919" tpage="default_2.bz2">spr_bird_2a4cb852-3f6d-4e8d-ac37-71958c50a13a.tpe</tpe>
-  <tpe x="1248" y="1919" tpage="default_2.bz2">spr_bird_9b7a9928-7a5e-4760-a313-505aa9b043d5.tpe</tpe>
-  <tpe x="1926" y="644" tpage="default_2.bz2">spr_boss_ship_gun_a17a38d5-1815-4015-896f-5dba8377abb0.tpe</tpe>
-  <tpe x="1926" y="758" tpage="default_2.bz2">spr_explosion_e56da9f0-1a14-43ed-9609-1e40e21385e2.tpe</tpe>
-  <tpe x="1926" y="866" tpage="default_2.bz2">spr_bird_205eb56d-a332-45ca-9fb9-689ebfbc1349.tpe</tpe>
-  <tpe x="1926" y="950" tpage="default_2.bz2">spr_bird_d4e39ef4-4759-4768-a31f-415861812137.tpe</tpe>
-  <tpe x="1807" y="1948" tpage="default_3.bz2">spr_zeppelin_lanterns_e437efb5-1410-483b-ac75-dfea82dcd2d7.tpe</tpe>
-  <tpe x="2" y="1858" tpage="default_3.bz2">spr_missile_35b3ad7d-79f1-471f-bedf-ebf35eb726f2.tpe</tpe>
+  <tpe x="1848" y="1895" tpage="default_2.bz2">spr_bird_cf65dde4-875f-4fed-9c3c-ee752dfdbd02.tpe</tpe>
+  <tpe x="1926" y="2" tpage="default_2.bz2">spr_bird_1272dec5-3be1-4536-bff7-76d0b96583c8.tpe</tpe>
+  <tpe x="1926" y="102" tpage="default_2.bz2">spr_explosion_cd8ef4eb-32dc-4457-a0e1-b76ce8292548.tpe</tpe>
+  <tpe x="1926" y="215" tpage="default_2.bz2">spr_bird_3e003ab8-1bec-49a7-a8be-4e7808636776.tpe</tpe>
+  <tpe x="1926" y="314" tpage="default_2.bz2">spr_explosion_c222edb2-ea0d-49fe-b852-41cfa79297ad.tpe</tpe>
+  <tpe x="1807" y="1948" tpage="default_3.bz2">spr_splash_b0bf499b-874c-4141-ab13-8608054e878b.tpe</tpe>
+  <tpe x="1926" y="429" tpage="default_2.bz2">spr_explosion_f22a722e-ac89-477e-84bc-d018e898f97d.tpe</tpe>
+  <tpe x="2" y="1858" tpage="default_3.bz2">spr_bomb_cb4673eb-2140-4eb9-8f8a-3a14411fff96.tpe</tpe>
+  <tpe x="1926" y="548" tpage="default_2.bz2">spr_bird_2a4cb852-3f6d-4e8d-ac37-71958c50a13a.tpe</tpe>
+  <tpe x="1926" y="639" tpage="default_2.bz2">spr_bird_9b7a9928-7a5e-4760-a313-505aa9b043d5.tpe</tpe>
+  <tpe x="1926" y="729" tpage="default_2.bz2">spr_boss_ship_gun_a17a38d5-1815-4015-896f-5dba8377abb0.tpe</tpe>
+  <tpe x="1926" y="843" tpage="default_2.bz2">spr_explosion_e56da9f0-1a14-43ed-9609-1e40e21385e2.tpe</tpe>
+  <tpe x="1926" y="951" tpage="default_2.bz2">spr_bird_205eb56d-a332-45ca-9fb9-689ebfbc1349.tpe</tpe>
+  <tpe x="181" y="1858" tpage="default_3.bz2">spr_bird_d4e39ef4-4759-4768-a31f-415861812137.tpe</tpe>
+  <tpe x="298" y="1858" tpage="default_3.bz2">spr_zeppelin_lanterns_e437efb5-1410-483b-ac75-dfea82dcd2d7.tpe</tpe>
+  <tpe x="1848" y="1991" tpage="default_2.bz2">spr_missile_35b3ad7d-79f1-471f-bedf-ebf35eb726f2.tpe</tpe>
   <tpe x="1927" y="2" tpage="default_3.bz2">spr_explosion_ca1ef6b8-3686-49d4-a01e-91c148635a0e.tpe</tpe>
   <tpe x="1927" y="98" tpage="default_3.bz2">spr_splash_7549a541-23ab-47bf-8d0d-e7853dac439d.tpe</tpe>
   <tpe x="1927" y="180" tpage="default_3.bz2">spr_explosion_411c95d0-b497-4b24-b2fc-9c5163500562.tpe</tpe>
-  <tpe x="193" y="1858" tpage="default_3.bz2">spr_splash_fd75855a-7aef-45c4-a2ef-a4ca8cdb0297.tpe</tpe>
-  <tpe x="374" y="1858" tpage="default_3.bz2">spr_star_glow_8d16fef3-49bc-4693-ac1e-d8e1a212682e.tpe</tpe>
-  <tpe x="462" y="1858" tpage="default_3.bz2">spr_splash_0520145c-922b-4807-8f32-e18b1af21f41.tpe</tpe>
-  <tpe x="462" y="1899" tpage="default_3.bz2">spr_splash_e8847025-294c-4289-83fc-71f4ca04d5d0.tpe</tpe>
-  <tpe x="645" y="1858" tpage="default_3.bz2">spr_bird_467317d9-004f-4155-9eef-b04d95846728.tpe</tpe>
-  <tpe x="761" y="1858" tpage="default_3.bz2">spr_bird_a98b04fe-b2d5-4b3c-a3e3-4f7d963b89b5.tpe</tpe>
-  <tpe x="876" y="1858" tpage="default_3.bz2">spr_explosion_972cfc49-7ad5-4444-ba75-a73a685687ca.tpe</tpe>
-  <tpe x="959" y="1858" tpage="default_3.bz2">spr_bird_173be8cc-12aa-4cd1-b5ac-e3f998c9efc1.tpe</tpe>
-  <tpe x="1075" y="1858" tpage="default_3.bz2">spr_bird_0bf8b65c-2689-45e4-b327-0715b63d563d.tpe</tpe>
-  <tpe x="1131" y="2010" tpage="default_2.bz2">spr_splash_1e2466a9-8b5d-491e-9174-2a5eea2f8591.tpe</tpe>
-  <tpe x="1190" y="1858" tpage="default_3.bz2">spr_explosion_bd4ec81e-337a-4a30-8c51-47f1c389c434.tpe</tpe>
+  <tpe x="1131" y="1994" tpage="default_2.bz2">spr_splash_fd75855a-7aef-45c4-a2ef-a4ca8cdb0297.tpe</tpe>
+  <tpe x="1927" y="270" tpage="default_3.bz2">spr_star_glow_8d16fef3-49bc-4693-ac1e-d8e1a212682e.tpe</tpe>
+  <tpe x="456" y="1858" tpage="default_3.bz2">spr_splash_0520145c-922b-4807-8f32-e18b1af21f41.tpe</tpe>
+  <tpe x="456" y="1899" tpage="default_3.bz2">spr_splash_e8847025-294c-4289-83fc-71f4ca04d5d0.tpe</tpe>
+  <tpe x="639" y="1858" tpage="default_3.bz2">spr_bird_467317d9-004f-4155-9eef-b04d95846728.tpe</tpe>
+  <tpe x="755" y="1858" tpage="default_3.bz2">spr_bird_a98b04fe-b2d5-4b3c-a3e3-4f7d963b89b5.tpe</tpe>
+  <tpe x="870" y="1858" tpage="default_3.bz2">spr_explosion_972cfc49-7ad5-4444-ba75-a73a685687ca.tpe</tpe>
+  <tpe x="953" y="1858" tpage="default_3.bz2">spr_bird_173be8cc-12aa-4cd1-b5ac-e3f998c9efc1.tpe</tpe>
+  <tpe x="1069" y="1858" tpage="default_3.bz2">spr_bird_0bf8b65c-2689-45e4-b327-0715b63d563d.tpe</tpe>
+  <tpe x="953" y="1913" tpage="default_3.bz2">spr_splash_1e2466a9-8b5d-491e-9174-2a5eea2f8591.tpe</tpe>
+  <tpe x="1971" y="1895" tpage="default_2.bz2">spr_explosion_bd4ec81e-337a-4a30-8c51-47f1c389c434.tpe</tpe>
   <tpe x="1982" y="1957" tpage="default_0.bz2">spr_zeppelin_propeller_674cf880-5431-4d09-b211-4384a8d69459.tpe</tpe>
   <tpe x="1993" y="1827" tpage="default_1.bz2">spr_zeppelin_propeller_893243e4-2061-4b2a-9c6b-51a7e7919c10.tpe</tpe>
-  <tpe x="1927" y="270" tpage="default_3.bz2">spr_zeppelin_propeller_dd104e35-582f-44d7-8677-a357665876af.tpe</tpe>
-  <tpe x="1926" y="1034" tpage="default_2.bz2">spr_boss_ship_left_gun_ae6c1a64-52ee-4116-8b51-25e161ea37fd.tpe</tpe>
-  <tpe x="1927" y="362" tpage="default_3.bz2">spr_splash_82f92e2a-9e88-4344-ae61-f066cf3d2b9b.tpe</tpe>
-  <tpe x="1927" y="436" tpage="default_3.bz2">spr_machine_gun_0598e597-6e1b-4b33-a79e-ff2081d159ef.tpe</tpe>
-  <tpe x="1952" y="481" tpage="default_3.bz2">spr_zeppelin_propeller_70b234d9-1091-47a8-b8a4-def21f2ede37.tpe</tpe>
-  <tpe x="1952" y="569" tpage="default_3.bz2">spr_explosion_c1efdc16-28d9-4726-955b-8bc7ed7569d8.tpe</tpe>
-  <tpe x="1954" y="633" tpage="default_3.bz2">res_pt_shape_explosion.tpe</tpe>
-  <tpe x="1954" y="705" tpage="default_3.bz2">res_pt_shape_flare.tpe</tpe>
-  <tpe x="1954" y="777" tpage="default_3.bz2">res_pt_shape_smoke.tpe</tpe>
-  <tpe x="1954" y="849" tpage="default_3.bz2">res_pt_shape_spark.tpe</tpe>
+  <tpe x="1927" y="356" tpage="default_3.bz2">spr_zeppelin_propeller_dd104e35-582f-44d7-8677-a357665876af.tpe</tpe>
+  <tpe x="1926" y="1035" tpage="default_2.bz2">spr_boss_ship_left_gun_ae6c1a64-52ee-4116-8b51-25e161ea37fd.tpe</tpe>
+  <tpe x="1927" y="448" tpage="default_3.bz2">spr_splash_82f92e2a-9e88-4344-ae61-f066cf3d2b9b.tpe</tpe>
+  <tpe x="1927" y="522" tpage="default_3.bz2">spr_machine_gun_0598e597-6e1b-4b33-a79e-ff2081d159ef.tpe</tpe>
+  <tpe x="1958" y="567" tpage="default_3.bz2">spr_zeppelin_propeller_70b234d9-1091-47a8-b8a4-def21f2ede37.tpe</tpe>
+  <tpe x="1958" y="655" tpage="default_3.bz2">spr_explosion_c1efdc16-28d9-4726-955b-8bc7ed7569d8.tpe</tpe>
+  <tpe x="1960" y="719" tpage="default_3.bz2">res_pt_shape_explosion.tpe</tpe>
+  <tpe x="1960" y="791" tpage="default_3.bz2">res_pt_shape_flare.tpe</tpe>
+  <tpe x="1960" y="863" tpage="default_3.bz2">res_pt_shape_smoke.tpe</tpe>
+  <tpe x="1960" y="935" tpage="default_3.bz2">res_pt_shape_spark.tpe</tpe>
+  <tpe x="1958" y="1005" tpage="default_3.bz2">spr_portrait_examplechar_3250b4a9-695b-472c-86df-1015d2851139.tpe</tpe>
+  <tpe x="1958" y="1073" tpage="default_3.bz2">spr_portrait_examplechar_5698e1ce-aec5-46c4-8950-88003103deb0.tpe</tpe>
+  <tpe x="1958" y="1141" tpage="default_3.bz2">spr_portrait_examplechar_7e05c704-6fe1-452a-81db-6e2276a9f386.tpe</tpe>
+  <tpe x="1958" y="1209" tpage="default_3.bz2">spr_portrait_player_55229495-f025-4b9a-8d44-b0e7532d2dda.tpe</tpe>
+  <tpe x="1958" y="1277" tpage="default_3.bz2">spr_portrait_player_6e2dcf97-d9a4-4222-b285-7e11e45a4f6c.tpe</tpe>
+  <tpe x="1958" y="1345" tpage="default_3.bz2">spr_portrait_player_a1245286-eae3-4288-85b6-774836bad009.tpe</tpe>
+  <tpe x="1958" y="1413" tpage="default_3.bz2">spr_portraitframe_40a10e9b-6096-4f77-9653-8dafe868f008.tpe</tpe>
   <tpe x="1807" y="2024" tpage="default_1.bz2">spr_boss_tank_gun_63e67318-fd06-4e5f-b0e5-e618f0f26c90.tpe</tpe>
-  <tpe x="1952" y="919" tpage="default_3.bz2">spr_star_710bafb5-67af-4fb5-89f4-c91e4e805ff6.tpe</tpe>
-  <tpe x="1952" y="984" tpage="default_3.bz2">spr_star_e6d8a5b6-77cc-467d-82bf-6c6cbc5f898f.tpe</tpe>
-  <tpe x="1954" y="1051" tpage="default_3.bz2">res_pt_shape_circle.tpe</tpe>
-  <tpe x="1954" y="1121" tpage="default_3.bz2">res_pt_shape_disk.tpe</tpe>
-  <tpe x="1954" y="1191" tpage="default_3.bz2">res_pt_shape_ring.tpe</tpe>
-  <tpe x="1967" y="1261" tpage="default_3.bz2">res_pt_shape_square.tpe</tpe>
-  <tpe x="1967" y="1331" tpage="default_3.bz2">res_pt_shape_snow.tpe</tpe>
-  <tpe x="1967" y="1403" tpage="default_3.bz2">res_pt_shape_sphere.tpe</tpe>
-  <tpe x="1967" y="1472" tpage="default_3.bz2">res_pt_shape_star.tpe</tpe>
-  <tpe x="1965" y="1538" tpage="default_3.bz2">spr_sound_on_of_258bea10-32a7-4e57-a770-35ed8015553a.tpe</tpe>
-  <tpe x="1965" y="1602" tpage="default_3.bz2">spr_sound_on_of_3f517981-a231-4978-8e7a-7002b6f4b6a5.tpe</tpe>
-  <tpe x="1320" y="2022" tpage="default_2.bz2">spr_splash_eaff82f2-8248-4c22-ba66-62da64e5ab2b.tpe</tpe>
-  <tpe x="1501" y="2022" tpage="default_2.bz2">spr_splash_ec0cdadd-0b36-4753-8d42-ff98635f8f94.tpe</tpe>
-  <tpe x="1967" y="1668" tpage="default_3.bz2">res_pt_shape_cloud.tpe</tpe>
-  <tpe x="1965" y="1731" tpage="default_3.bz2">spr_explosion_3caff4af-bb79-4f55-9ab0-0d2cab03e4f5.tpe</tpe>
+  <tpe x="1958" y="1481" tpage="default_3.bz2">spr_star_710bafb5-67af-4fb5-89f4-c91e4e805ff6.tpe</tpe>
+  <tpe x="1958" y="1546" tpage="default_3.bz2">spr_star_e6d8a5b6-77cc-467d-82bf-6c6cbc5f898f.tpe</tpe>
+  <tpe x="1960" y="1613" tpage="default_3.bz2">res_pt_shape_circle.tpe</tpe>
+  <tpe x="1960" y="1683" tpage="default_3.bz2">res_pt_shape_disk.tpe</tpe>
+  <tpe x="1960" y="1753" tpage="default_3.bz2">res_pt_shape_ring.tpe</tpe>
+  <tpe x="1960" y="1823" tpage="default_3.bz2">res_pt_shape_square.tpe</tpe>
+  <tpe x="1960" y="1893" tpage="default_3.bz2">res_pt_shape_snow.tpe</tpe>
+  <tpe x="1960" y="1965" tpage="default_3.bz2">res_pt_shape_sphere.tpe</tpe>
+  <tpe x="1186" y="1860" tpage="default_3.bz2">res_pt_shape_star.tpe</tpe>
+  <tpe x="1254" y="1858" tpage="default_3.bz2">spr_sound_on_of_258bea10-32a7-4e57-a770-35ed8015553a.tpe</tpe>
+  <tpe x="1983" y="356" tpage="default_3.bz2">spr_sound_on_of_3f517981-a231-4978-8e7a-7002b6f4b6a5.tpe</tpe>
+  <tpe x="1312" y="2022" tpage="default_2.bz2">spr_splash_eaff82f2-8248-4c22-ba66-62da64e5ab2b.tpe</tpe>
+  <tpe x="1493" y="2022" tpage="default_2.bz2">spr_splash_ec0cdadd-0b36-4753-8d42-ff98635f8f94.tpe</tpe>
+  <tpe x="1112" y="1969" tpage="default_4.bz2">res_pt_shape_cloud.tpe</tpe>
+  <tpe x="1175" y="1967" tpage="default_4.bz2">spr_explosion_3caff4af-bb79-4f55-9ab0-0d2cab03e4f5.tpe</tpe>
   <tpe x="1926" y="1762" tpage="default_0.bz2">spr_bird_02d0ad3b-0d19-4896-84c8-ab9fa4a79331.tpe</tpe>
-  <tpe x="2" y="1908" tpage="default_3.bz2">spr_bird_6b471fbf-0c3d-4d22-b109-2a5db4a1dada.tpe</tpe>
+  <tpe x="2" y="2005" tpage="default_3.bz2">spr_bird_6b471fbf-0c3d-4d22-b109-2a5db4a1dada.tpe</tpe>
   <tpe x="2004" y="1797" tpage="default_0.bz2">spr_splash_feb2ef6d-7005-4aaa-a6dd-0d125ee169c3.tpe</tpe>
-  <tpe x="193" y="1903" tpage="default_3.bz2">spr_energy_bar_unit_6914c2ae-8820-4d60-8f97-acf9f72e8e21.tpe</tpe>
+  <tpe x="105" y="2005" tpage="default_3.bz2">spr_energy_bar_unit_6914c2ae-8820-4d60-8f97-acf9f72e8e21.tpe</tpe>
+  <tpe x="1674" y="2022" tpage="default_2.bz2">spr_namebox_9b191039-110e-4d58-812e-05e69aeeba9e.tpe</tpe>
   <tpe x="2004" y="1872" tpage="default_0.bz2">spr_splash_de2a1654-3be0-486f-a572-d5dad84b9800.tpe</tpe>
-  <tpe x="2004" y="1918" tpage="default_0.bz2">spr_water_94a455f9-80ee-4ab9-8d82-0dafec372ced.tpe</tpe>
+  <tpe x="2004" y="1918" tpage="default_0.bz2">spr_dialoguefinished_a746a967-f6a8-4c68-bcab-8551c53dd57a.tpe</tpe>
+  <tpe x="1998" y="1587" tpage="default_0.bz2">spr_water_94a455f9-80ee-4ab9-8d82-0dafec372ced.tpe</tpe>
   <tpe x="2" y="2035" tpage="default_0.bz2">spr_enemy_tank_gun_2af4b852-5939-4a3f-abbd-c5fa5e39c9bd.tpe</tpe>
-  <tpe x="1998" y="1587" tpage="default_0.bz2">spr_zeppelin_lantern_a79c566a-6c6f-4c84-9251-b0d3f7ed078e.tpe</tpe>
+  <tpe x="1998" y="1623" tpage="default_0.bz2">spr_zeppelin_lantern_a79c566a-6c6f-4c84-9251-b0d3f7ed078e.tpe</tpe>
   <tpe x="82" y="2035" tpage="default_0.bz2">spr_bullet_sharp_2761aa9f-9177-43b7-a703-ff032fa9b439.tpe</tpe>
-  <tpe x="1684" y="2024" tpage="default_2.bz2">res_pt_shape_line.tpe</tpe>
-  <tpe x="150" y="2035" tpage="default_0.bz2">spr_bullet_red_baron_068c0686-1818-40b2-830c-df5362e0d298.tpe</tpe>
-  <tpe x="201" y="2035" tpage="default_0.bz2">spr_tank_bullet_8eaf7590-82af-412e-8fbd-b906d0a61ccd.tpe</tpe>
-  <tpe x="2029" y="1587" tpage="default_0.bz2">spr_debris_31059b3b-ca47-4227-9444-77746d8f6513.tpe</tpe>
-  <tpe x="1998" y="1623" tpage="default_0.bz2">spr_debris_d589fccb-3f98-4136-b1ff-19625714dc10.tpe</tpe>
-  <tpe x="2029" y="1617" tpage="default_0.bz2">spr_debris_333da177-3763-4a21-b82d-e15f9a0972a2.tpe</tpe>
-  <tpe x="1998" y="1641" tpage="default_0.bz2">spr_debris_12b0b27c-a978-4958-a74d-e2ba7d58e514.tpe</tpe>
-  <tpe x="2043" y="1642" tpage="default_0.bz2">res_pt_shape_pixel.tpe</tpe>
-  <tpe x="2044" y="1375" tpage="default_0.bz2">Sprite83_39049828-5b15-415f-9205-5568cbb77872.tpe</tpe>
+  <tpe x="1740" y="2024" tpage="default_2.bz2">res_pt_shape_line.tpe</tpe>
+  <tpe x="1998" y="1659" tpage="default_0.bz2">spr_examplechar_1_cc61880a-f866-4b11-9408-11a16ba6472e.tpe</tpe>
+  <tpe x="1998" y="1659" tpage="default_0.bz2">spr_examplechar_2_cc61880a-f866-4b11-9408-11a16ba6472e.tpe</tpe>
+  <tpe x="1998" y="1659" tpage="default_0.bz2">spr_examplechar_cc61880a-f866-4b11-9408-11a16ba6472e.tpe</tpe>
+  <tpe x="2022" y="1659" tpage="default_0.bz2">spr_player_008a8419-7097-4975-adad-3f888c871f2b.tpe</tpe>
+  <tpe x="2022" y="1659" tpage="default_0.bz2">spr_player_1_008a8419-7097-4975-adad-3f888c871f2b.tpe</tpe>
+  <tpe x="2022" y="1659" tpage="default_0.bz2">spr_player_2_008a8419-7097-4975-adad-3f888c871f2b.tpe</tpe>
+  <tpe x="1998" y="1689" tpage="default_0.bz2">spr_bullet_red_baron_068c0686-1818-40b2-830c-df5362e0d298.tpe</tpe>
+  <tpe x="1998" y="1726" tpage="default_0.bz2">spr_portrait_examplechar_idle_03aa0d39-e4e7-4a23-a288-7932ab1021f4.tpe</tpe>
+  <tpe x="2014" y="2" tpage="default_0.bz2">spr_portrait_examplechar_idle_4af13606-c37c-4b88-98ef-3c901fb4f3d8.tpe</tpe>
+  <tpe x="1998" y="1726" tpage="default_0.bz2">spr_portrait_examplechar_idle_673c02f3-2b4f-44fa-b04c-f9212336978d.tpe</tpe>
+  <tpe x="1998" y="1704" tpage="default_0.bz2">spr_portrait_examplechar_idle_7a01864d-13f4-496a-9958-8f8fa9e49e75.tpe</tpe>
+  <tpe x="1998" y="1704" tpage="default_0.bz2">spr_portrait_examplechar_idle_7feb9c53-4ac1-42f9-8a6c-f333800a3169.tpe</tpe>
+  <tpe x="2014" y="2" tpage="default_0.bz2">spr_portrait_examplechar_idle_e6e2fda3-5cca-44d7-aed5-df2a8169816c.tpe</tpe>
+  <tpe x="1998" y="1726" tpage="default_0.bz2">spr_portrait_examplechar_idle_eba5c3cf-a5ae-4e5c-8c3a-a0a5426d25f3.tpe</tpe>
+  <tpe x="2014" y="2" tpage="default_0.bz2">spr_portrait_examplechar_idle_f0f3af74-28a4-4789-93c1-7442d6b3d50b.tpe</tpe>
+  <tpe x="150" y="2035" tpage="default_0.bz2">spr_tank_bullet_8eaf7590-82af-412e-8fbd-b906d0a61ccd.tpe</tpe>
+  <tpe x="2014" y="24" tpage="default_0.bz2">spr_debris_31059b3b-ca47-4227-9444-77746d8f6513.tpe</tpe>
+  <tpe x="2014" y="54" tpage="default_0.bz2">spr_box_afb0aa9c-c220-4681-9353-e028874d3eed.tpe</tpe>
+  <tpe x="2014" y="74" tpage="default_0.bz2">spr_debris_d589fccb-3f98-4136-b1ff-19625714dc10.tpe</tpe>
+  <tpe x="2014" y="92" tpage="default_0.bz2">spr_debris_333da177-3763-4a21-b82d-e15f9a0972a2.tpe</tpe>
+  <tpe x="2014" y="115" tpage="default_0.bz2">spr_debris_12b0b27c-a978-4958-a74d-e2ba7d58e514.tpe</tpe>
+  <tpe x="2034" y="54" tpage="default_0.bz2">spr_emotes_014839f2-9b04-4088-aa3f-e4c68e9b5794.tpe</tpe>
+  <tpe x="2034" y="54" tpage="default_0.bz2">spr_emotes_1_014839f2-9b04-4088-aa3f-e4c68e9b5794.tpe</tpe>
+  <tpe x="2033" y="74" tpage="default_0.bz2">spr_emotes_1_15efbb7a-e09e-445b-b8a8-5b432c114379.tpe</tpe>
+  <tpe x="2029" y="92" tpage="default_0.bz2">spr_emotes_1_4c3f8763-11c5-41e2-b6d2-07639e7601b3.tpe</tpe>
+  <tpe x="2014" y="131" tpage="default_0.bz2">spr_emotes_1_52d2b043-d8b6-488a-b94d-69313e309123.tpe</tpe>
+  <tpe x="2034" y="107" tpage="default_0.bz2">spr_emotes_1_663edbea-c708-42e3-a466-7ce6b7356974.tpe</tpe>
+  <tpe x="2030" y="131" tpage="default_0.bz2">spr_emotes_1_7277c9fb-6df8-483e-8b29-e8fb0c267c2d.tpe</tpe>
+  <tpe x="2014" y="146" tpage="default_0.bz2">spr_emotes_1_78bd5e34-72fa-4f3d-8833-4888e461a186.tpe</tpe>
+  <tpe x="2030" y="146" tpage="default_0.bz2">spr_emotes_1_82260f6a-3b8b-4f6b-bad7-f8435197c576.tpe</tpe>
+  <tpe x="2014" y="161" tpage="default_0.bz2">spr_emotes_1_ade7aa7b-837f-42c8-9c8b-74f25b8986eb.tpe</tpe>
+  <tpe x="2030" y="161" tpage="default_0.bz2">spr_emotes_1_daaa14ff-78da-4ce3-a787-6ac9ffe08aa7.tpe</tpe>
+  <tpe x="2033" y="74" tpage="default_0.bz2">spr_emotes_15efbb7a-e09e-445b-b8a8-5b432c114379.tpe</tpe>
+  <tpe x="2029" y="92" tpage="default_0.bz2">spr_emotes_4c3f8763-11c5-41e2-b6d2-07639e7601b3.tpe</tpe>
+  <tpe x="2014" y="131" tpage="default_0.bz2">spr_emotes_52d2b043-d8b6-488a-b94d-69313e309123.tpe</tpe>
+  <tpe x="2034" y="107" tpage="default_0.bz2">spr_emotes_663edbea-c708-42e3-a466-7ce6b7356974.tpe</tpe>
+  <tpe x="2030" y="131" tpage="default_0.bz2">spr_emotes_7277c9fb-6df8-483e-8b29-e8fb0c267c2d.tpe</tpe>
+  <tpe x="2014" y="146" tpage="default_0.bz2">spr_emotes_78bd5e34-72fa-4f3d-8833-4888e461a186.tpe</tpe>
+  <tpe x="2030" y="146" tpage="default_0.bz2">spr_emotes_82260f6a-3b8b-4f6b-bad7-f8435197c576.tpe</tpe>
+  <tpe x="2014" y="161" tpage="default_0.bz2">spr_emotes_ade7aa7b-837f-42c8-9c8b-74f25b8986eb.tpe</tpe>
+  <tpe x="2030" y="161" tpage="default_0.bz2">spr_emotes_daaa14ff-78da-4ce3-a787-6ac9ffe08aa7.tpe</tpe>
+  <tpe x="2035" y="24" tpage="default_0.bz2">spr_emotes_1_feb45d9d-db4d-4af0-a258-35571f8e6949.tpe</tpe>
+  <tpe x="2035" y="24" tpage="default_0.bz2">spr_emotes_feb45d9d-db4d-4af0-a258-35571f8e6949.tpe</tpe>
+  <tpe x="2014" y="176" tpage="default_0.bz2">spr_portrait_examplechar_mouth_86bcc651-e073-47af-b4c7-acbc0dee88fe.tpe</tpe>
+  <tpe x="2030" y="176" tpage="default_0.bz2">spr_portrait_examplechar_mouth_b0b106f9-3701-4f82-9da1-22c9a3a15424.tpe</tpe>
+  <tpe x="2037" y="930" tpage="default_0.bz2">spr_emotes_1_baf935cc-d2cc-4ffb-a8b4-f30e0d4925dd.tpe</tpe>
+  <tpe x="2037" y="930" tpage="default_0.bz2">spr_emotes_baf935cc-d2cc-4ffb-a8b4-f30e0d4925dd.tpe</tpe>
+  <tpe x="2036" y="124" tpage="default_0.bz2">res_pt_shape_pixel.tpe</tpe>
+  <tpe x="2034" y="69" tpage="default_0.bz2">Sprite83_39049828-5b15-415f-9205-5568cbb77872.tpe</tpe>
 </TextureGroup>
