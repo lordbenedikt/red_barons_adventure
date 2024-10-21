@@ -1,4 +1,5 @@
 global.GUI = new GuiStruct();
+global.UsingTouchScreen = true;
 
 function GuiStruct() constructor {
 	static slide_page_number = -1;

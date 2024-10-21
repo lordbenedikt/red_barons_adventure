@@ -1,5 +1,4 @@
 global.GUI.update_and_draw();
-draw_text(100,100,global.highest_unlocked_boss)
 
 if(in_game == 1)
 {

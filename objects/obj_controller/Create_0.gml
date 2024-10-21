@@ -18,7 +18,6 @@ game_over = 0;
 __dnd_health = 100;
 in_game = 0;
 
-
 // Create Sunset Filter Surface
 filter_surface = surface_create(room_width, room_height);
 

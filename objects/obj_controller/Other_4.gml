@@ -34,10 +34,12 @@ global.level_done = false;
 
 alarm[0] = random_range(30,90);
 
-if (in_game && !instance_exists(obj_red_baron)) {
-	var _ply = instance_create_layer(128, 375, layer_get_id("Instances"),obj_red_baron);
-	_ply.image_xscale = 0.1105244;
-	_ply.image_yscale = 0.1105244;
+if (in_game) {
+	if (!instance_exists(obj_red_baron)) {
+		var _ply = instance_create_layer(128, 375, layer_get_id("Instances"),obj_red_baron);
+		_ply.image_xscale = 0.1105244;
+		_ply.image_yscale = 0.1105244;
+	}
 }
 
 if (room == room_mountains) {

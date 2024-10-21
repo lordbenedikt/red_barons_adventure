@@ -1,6 +1,5 @@
 /// @description
 
-
 exec_scheduled_actions()
 
 if (lightning_is_hitting) {
@@ -36,5 +35,35 @@ if (global.spawn_boss and !boss_spawned) {
 	var _current_level = array_get_index(global.level_order, room);
 	if (_current_level != -1 && global.destroyed_airplanes >= global.target_destroyed_enemies[_current_level]) {
 		global.spawn_boss = true;
+	}
+}
+
+var _goto_next_room = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || (global.UsingTouchScreen && mouse_check_button(mb_left))
+if (_goto_next_room) {
+	if(room==room_game_over)
+	{
+		/// @description restart
+	
+		room_goto(room_main_menu);
+
+		game_over = 0;
+
+	
+	__dnd_health = real(100);
+	}
+
+	if(room == room_main_menu)
+	{
+		if(global.GUI.is_enabled())
+		{
+			audio_play_sound(snd_main_menu_click, 0, 0, 1.0, undefined, 1.0);
+	
+				sprite_index = spr_start_button;
+				image_index = 0;
+	
+				alarm_set(1, global.fade_out_duration);
+	
+				script_execute(fade_out, global.fade_out_duration);
+		}
 	}
 }

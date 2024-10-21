@@ -3,7 +3,7 @@
 
 laser_is_active = false;
 
-if (keyboard_check(ord("S"))) {
+if (global.input_shoot_laser) {
 	if (laser_powerup>0) {
 		laser_is_active = true;
 		laser_powerup -= 0.02;
