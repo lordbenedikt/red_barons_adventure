@@ -9,3 +9,10 @@ function handle_input() {
 	global.input_shoot_laser = keyboard_check_pressed(ord("S"));
 	global.input_drop_bomb = keyboard_check_pressed(vk_space);
 }
+
+function show_touch_controls() {
+	return room != room_main_menu 
+		&& room != room_victory
+		&& room != room_game_over
+		&& global.UsingTouchScreen;
+}

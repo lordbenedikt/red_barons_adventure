@@ -1,4 +1,4 @@
-visible = room != room_main_menu && global.UsingTouchScreen;
+visible = show_touch_controls();
 
 if (touch_id != -1)
 {

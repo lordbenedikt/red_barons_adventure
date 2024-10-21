@@ -38,7 +38,8 @@ if (global.spawn_boss and !boss_spawned) {
 	}
 }
 
-var _goto_next_room = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || (global.UsingTouchScreen && mouse_check_button(mb_left))
+var _goto_next_room = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) 
+	|| (global.UsingTouchScreen && mouse_check_button(mb_left) && room == room_game_over)
 if (_goto_next_room) {
 	if(room==room_game_over)
 	{
