@@ -36,6 +36,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_dialogue","order":1,"path":"fonts/fnt_dialogue/fnt_dialogue.yy",},
+    {"name":"font_ammunition","order":3,"path":"fonts/font_ammunition/font_ammunition.yy",},
     {"name":"font_gui_buttons","order":2,"path":"fonts/font_gui_buttons/font_gui_buttons.yy",},
     {"name":"obj_bomb_button","order":7,"path":"objects/obj_bomb_button/obj_bomb_button.yy",},
     {"name":"obj_bomb","order":11,"path":"objects/obj_bomb/obj_bomb.yy",},

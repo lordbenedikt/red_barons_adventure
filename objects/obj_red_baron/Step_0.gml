@@ -28,6 +28,8 @@ if (global.input_shoot_laser) {
 	if (laser_powerup>0) {
 		audio_play_sound(snd_laser,0,1);
 	}
+} else {
+	audio_stop_sound(snd_laser);
 }
 
 if (global.input_drop_bomb) {
@@ -99,7 +101,7 @@ image_angle = tilt_angle;
 with(obj_controller) {
 	if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;
 	if(__dnd_health <= 0)
-{
-	with(other) instance_destroy();
-}
+	{
+		with(other) instance_destroy();
+	}
 }

@@ -55,6 +55,7 @@
   "resources":[
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
     {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
+    {"id":{"name":"font_ammunition","path":"fonts/font_ammunition/font_ammunition.yy",},},
     {"id":{"name":"font_destroyed_airplanes","path":"fonts/font_destroyed_airplanes/font_destroyed_airplanes.yy",},},
     {"id":{"name":"font_gui_buttons","path":"fonts/font_gui_buttons/font_gui_buttons.yy",},},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
