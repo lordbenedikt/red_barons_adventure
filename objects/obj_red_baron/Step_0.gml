@@ -25,7 +25,7 @@ if (global.input_launch_missile) {
 }
 
 if (global.input_shoot_laser) {
-	if (laser_powerup>0) {
+	if (laser_powerup>0 && !audio_is_playing(snd_laser)) {
 		audio_play_sound(snd_laser,0,1);
 	}
 } else {
